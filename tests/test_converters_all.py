@@ -74,12 +74,41 @@ def build_mengxi(root: Path) -> Path:
     return d
 
 
+def build_ideal(root: Path) -> Path:
+    import gzip
+    from datetime import datetime, timedelta
+
+    d = root / "ideal"
+    # metadata inventory (headered) per the dataset's metadata CSVs
+    _write(d / "metadata" / "sensor.csv",
+           "home,room,sensor,sensor_type,units\n"
+           "1,kitchen,41,apparent_power,W\n"
+           "1,kitchen,42,appliance_power,W\n"
+           "1,lounge,43,temperature,degC_x10\n")
+    # headerless 2-column UTC csv, 1 Hz apparent power (whole home)
+    base = datetime(2018, 6, 1)
+    rows = "".join(
+        f"{base + timedelta(seconds=i):%Y-%m-%d %H:%M:%S},{2400 + i % 60}\n"
+        for i in range(600))
+    _write(d / "sensor data" / "house_1" / "power_41.csv", rows)
+    # gzipped appliance power file (real power, W)
+    rows2 = "".join(
+        f"{base + timedelta(seconds=i):%Y-%m-%d %H:%M:%S},{120 + i % 20}\n"
+        for i in range(600))
+    p = d / "sensor data" / "house_1" / "appliance_42.csv.gz"
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with gzip.open(p, "wt", encoding="ascii") as fh:
+        fh.write(rows2)
+    return d
+
+
 BUILDERS = {
     "ukdale": build_ukdale,
     "refit": build_refit,
     "lcl": build_lcl,
     "eco": build_eco,
     "mengxi": build_mengxi,
+    "ideal": build_ideal,
 }
 
 
@@ -180,3 +209,42 @@ def test_eco_phases(tmp_path_factory):
     manifest = load_manifest(out)
     ids = [c["id"] for c in manifest["x-oed"]["sites"][0]["channels"]]
     assert ids == ["phase1", "phase2", "phase3"]
+
+
+def test_ideal_semantics(tmp_path_factory):
+    from oed.converters.ideal import IdealConverter
+    from oed.io import load_manifest, read_channel_parquet
+
+    src = build_ideal(tmp_path_factory.mktemp("ideal-src"))
+    out = tmp_path_factory.mktemp("ideal-out")
+    IdealConverter().convert(src, out)
+    manifest = load_manifest(out)
+    site = manifest["x-oed"]["sites"][0]
+    assert site["id"] == "house_1" and site["timezone"] == "UTC"
+    by_id = {c["id"]: c for c in site["channels"]}
+    # temperature sensor 43 must be filtered out by the inventory
+    assert set(by_id) == {"sensor41", "sensor42"}
+    assert by_id["sensor41"]["role"] == "site_meter"
+    assert by_id["sensor41"]["ac_type"] == "apparent"
+    assert by_id["sensor42"]["role"] == "submeter"
+    assert by_id["sensor42"]["ac_type"] == "active"
+    assert by_id["sensor41"]["nominal_interval_s"] == 1.0
+    df = read_channel_parquet(out / "sites/house_1/sensor41.parquet")
+    assert str(df["timestamp"].iloc[0]) == "2018-06-01 00:00:00+00:00"
+    assert 2400 <= df["power_w"].min() and df["power_w"].max() <= 2460
+
+
+def test_ideal_without_inventory_falls_back_to_filename(tmp_path_factory):
+    from oed.converters.ideal import IdealConverter
+    from oed.io import load_manifest
+
+    src = tmp_path_factory.mktemp("ideal-src2")
+    _write(src / "sensor data" / "house_7" / "electricity_main.csv",
+           "".join(f"2018-06-01 00:{i // 60:02d}:{i % 60:02d},{300}\n"
+                   for i in range(120)))
+    out = tmp_path_factory.mktemp("ideal-out2")
+    IdealConverter().convert(src, out)
+    manifest = load_manifest(out)
+    site = manifest["x-oed"]["sites"][0]
+    assert site["id"] == "house_7"
+    assert site["channels"][0]["role"] == "site_meter"

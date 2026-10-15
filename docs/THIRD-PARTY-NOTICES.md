@@ -18,6 +18,7 @@
 | REFIT (Univ. of Strathclyde) | CC-BY-NC-SA 4.0 | 同上；引用 Makonin et al. |
 | Low Carbon London (UK Power Networks) | UK OGL v3 | 同上 |
 | ECO (ETH Zürich vs.inf) | 学术研究使用 | 同上；引用 Beckel et al., BuildSys 2014 |
+| IDEAL (Univ. of Edinburgh, DataShare DOI 10.7488/ds/2836) | CC-BY-NC 4.0，需注册下载 | 同上；引用 Pullinger et al., Scientific Data 2021 |
 | 蒙西电网边界条件数据集 (AI Camp Energy 2026, ModelScope) | 赛事提供 | 原生格式接入；`git lfs pull` 后本地转换 |
 
 ## 运行时依赖
