@@ -1,0 +1,51 @@
+# oed 质量规则（generated）
+rules:
+- id: sanity-house_1-ch01
+  description: house_1/ch01 数值不应为负
+  selector:
+    channel_id: ch01
+  check:
+    type: min
+    value: 0
+    unit: W
+  severity: critical
+  origin: heuristic
+  confirmed: false
+  reviewed_by: null
+- id: sanity-house_1-ch02
+  description: house_1/ch02 数值不应为负
+  selector:
+    channel_id: ch02
+  check:
+    type: min
+    value: 0
+    unit: W
+  severity: critical
+  origin: heuristic
+  confirmed: false
+  reviewed_by: null
+- id: bounds-electric-oven
+  description: electric oven 功率合理范围为 0-5500 W（家电常识库）
+  selector:
+    appliance_type: electric oven
+  check:
+    type: bounds
+    min: 0
+    max: 5500
+    unit: W
+  severity: warning
+  origin: heuristic
+  confirmed: false
+  reviewed_by: null
+- id: sanity-house_1-ch03
+  description: house_1/ch03 数值不应为负
+  selector:
+    channel_id: ch03
+  check:
+    type: min
+    value: 0
+    unit: W
+  severity: critical
+  origin: heuristic
+  confirmed: false
+  reviewed_by: null
