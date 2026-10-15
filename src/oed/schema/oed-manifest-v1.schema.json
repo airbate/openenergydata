@@ -119,8 +119,9 @@
                     "role": { "enum": ["site_meter", "submeter"] },
                     "physical_quantity": { "enum": ["power", "energy", "voltage", "current"] },
                     "ac_type": { "enum": ["active", "apparent", "reactive"] },
-                    "unit": { "enum": ["W", "kWh", "V", "A"] },
+                    "unit": { "enum": ["W", "kW", "MW", "kWh", "MWh", "V", "A"] },
                     "nominal_interval_s": { "type": "number", "exclusiveMinimum": 0 },
+                    "description": { "type": "string" },
                     "appliance": {
                       "type": ["object", "null"],
                       "properties": {

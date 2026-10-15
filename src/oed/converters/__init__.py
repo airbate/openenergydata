@@ -19,9 +19,16 @@ class Converter(Protocol):
 
 
 def _register() -> dict[str, Converter]:
-    from oed.converters import redd
+    from oed.converters import eco, lcl, mengxi, redd, refit, ukdale
 
-    instances = [redd.ReddConverter()]
+    instances = [
+        redd.ReddConverter(),
+        ukdale.UkdaleConverter(),
+        refit.RefitConverter(),
+        lcl.LclConverter(),
+        eco.EcoConverter(),
+        mengxi.MengxiConverter(),
+    ]
     return {c.dataset_id: c for c in instances}
 
 

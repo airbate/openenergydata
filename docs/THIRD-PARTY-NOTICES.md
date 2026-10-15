@@ -14,8 +14,11 @@
 | 数据集 | 许可/使用条款 | 本项目分发策略 |
 |---|---|---|
 | REDD (MIT CSAIL) | 供学术研究免费使用（[项目页](http://redd.csail.mit.edu)） | **不分发原始数据**，仅提供转换器；统一后数据的再分发遵循源许可 |
-
-后续接入的数据集（UK-DALE、REFIT、ECO、IDEAL、LCL）在接入时逐项补充本表。
+| UK-DALE (Imperial College) | 学术研究使用，再分发受限 | 同上；引用 Kelly & Knottenbelt, Scientific Data 2015 |
+| REFIT (Univ. of Strathclyde) | CC-BY-NC-SA 4.0 | 同上；引用 Makonin et al. |
+| Low Carbon London (UK Power Networks) | UK OGL v3 | 同上 |
+| ECO (ETH Zürich vs.inf) | 学术研究使用 | 同上；引用 Beckel et al., BuildSys 2014 |
+| 蒙西电网边界条件数据集 (AI Camp Energy 2026, ModelScope) | 赛事提供 | 原生格式接入；`git lfs pull` 后本地转换 |
 
 ## 运行时依赖
 

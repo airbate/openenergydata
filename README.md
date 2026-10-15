@@ -21,15 +21,33 @@ scripts/          # 真实数据集下载脚本
 docs/             # 参赛方案、方向 idea 池、第三方声明
 ```
 
+## 支持的数据源（转换器状态）
+
+| 数据集 | 类型 | 转换器状态 |
+|---|---|---|
+| REDD | 户内 NILM，1-3s | ✅ 夹具+真实格式验证 |
+| UK-DALE | 户内 NILM，1-6s | ✅ 夹具验证（.dat 家族） |
+| REFIT | 户内 8s，kW→W | ✅ 夹具验证 |
+| LCL | 半小时 kWh 智能电表 | ✅ 夹具验证 |
+| ECO | 瑞士三相 1s | ⚠️ 按官方文档实现，待真实数据验证 |
+| 蒙西电网（自有） | 电网级 MW 时序 | ✅ 原生格式（Git LFS 拉取后接入） |
+| IDEAL | 户内多传感 | 📮 欢迎按 `CONTRIBUTING.md` 贡献 |
+
 ## 快速开始
 
 ```bash
 pip install -e ".[dev]"
-pytest -q                              # 7 个用例全绿
+pytest -q                              # 29 个用例全绿
 oed convert redd <redd低频根目录> out/  # 转换为统一格式
 oed scan out/ --annotate               # 质量扫描 + 标记写回
-cat out/quality-report.md              # 人话质量报告
+oed rule generate out/                 # 生成候选规则（--ai 走大模型）
+oed rule confirm out/ <规则id> --by 你  # 人工确认（人机协同留痕）
+oed rule run out/                      # 执行已确认规则
+oed report out/                        # 自包含 HTML 质量报告卡
+oed bench out/                         # 负荷预测/NILM 基准排行榜
 ```
+
+完整教程见 `docs/tutorial.md`（30 分钟上手）。
 
 ## 时间线
 
