@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oed-base"
+version = "0.1.0"
+description = "OpenEnergyData: unified schema, converters, AI quality annotation and benchmarks for open energy time-series datasets"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "OpenEnergyData contributors" }]
+keywords = ["energy", "NILM", "dataset", "schema", "data-quality", "carbon-neutral"]
+dependencies = [
+    "pandas>=2.0",
+    "pyarrow>=14.0",
+    "typer>=0.12",
+    "jsonschema>=4.20",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+oed = "oed.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+oed = ["schema/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
