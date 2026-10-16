@@ -25,7 +25,7 @@ docs/             # 参赛方案、方向 idea 池、第三方声明
 
 | 数据集 | 类型 | 转换器状态 |
 |---|---|---|
-| REDD | 户内 NILM，1-3s | ✅ 夹具+真实格式验证 |
+| REDD | 户内 NILM，1-3s | ✅ 原始格式夹具验证；**真实数据管线已验证**（PV-Augmented 衍生版，见 `scripts/import_pvaug.py`，扫描器在其中发现了已发表数据集的白天置零伪影） |
 | UK-DALE | 户内 NILM，1-6s | ✅ 夹具验证（.dat 家族） |
 | REFIT | 户内 8s，kW→W | ✅ 夹具验证 |
 | LCL | 半小时 kWh 智能电表 | ✅ 夹具验证 |

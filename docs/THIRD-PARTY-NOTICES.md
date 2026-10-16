@@ -19,6 +19,7 @@
 | Low Carbon London (UK Power Networks) | UK OGL v3 | 同上 |
 | ECO (ETH Zürich vs.inf) | 学术研究使用 | 同上；引用 Beckel et al., BuildSys 2014 |
 | IDEAL (Univ. of Edinburgh, DataShare DOI 10.7488/ds/2836) | CC-BY-NC 4.0，需注册下载 | 同上；引用 Pullinger et al., Scientific Data 2021 |
+| PV-Augmented NILM Dataset (HF: wangxudong/PV-Augmented-NILM-Datasets) | 学术研究使用（REDD 衍生） | 仅作为真实数据验证通道（`scripts/import_pvaug.py`），不分发；其 `aggregate_power_with_injection` 通道含光伏注入实验伪影，oed 质量扫描已将其标出 |
 | 蒙西电网边界条件数据集 (AI Camp Energy 2026, ModelScope) | 赛事提供 | 原生格式接入；`git lfs pull` 后本地转换 |
 
 ## 运行时依赖
