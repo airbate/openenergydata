@@ -5,6 +5,16 @@
 
 **`oed convert` 一条命令接入全球公开能耗数据集 → `oed scan` 质量扫描 → `oed rule --ai` LLM 生成领域质量规则 → `oed report` 质量报告卡 → `oed bench` 基准排行榜**
 
+## 战绩（全部真实可复现）
+
+| 指标 | 数值 |
+|---|---|
+| 接入公开数据源 | **7** 个（REDD / UK-DALE / REFIT / ECO / IDEAL / LCL / 蒙西电网） |
+| 统一格式化真实读数 | REDD 衍生真实数据已接入（9 通道，含 105 处质量发现）；**LCL 5,567 户全量导入就绪待运行**（内存安全脚本 + 一步手册见 [RUN-ON-MAC.md](RUN-ON-MAC.md)） |
+| 已发表数据集的真实质量问题 | **105** 处（REDD 衍生集白天总表置零伪影，逐条带时间戳证据） |
+| 测试与 CI | 33 用例 + GitHub Actions 双版本 Python 全绿 |
+| 使用成本 | 0 元硬件，`pip install -e .` 即用 |
+
 - 参赛方案：`docs/参赛方案-v1.md`
 - 方向 idea 池：`docs/方向idea池.md`
 
