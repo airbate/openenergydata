@@ -1,0 +1,18 @@
+{
+  "households": 5552,
+  "evidence_levels": {
+    "sequence_verified": 5524,
+    "sequence_and_order": 16,
+    "order_reconstructed": 12
+  },
+  "excluded_raw_2012_ids": [
+    "MAC005559",
+    "MAC005560"
+  ],
+  "author_notebook": "https://github.com/sufirehman/ElectricityConsumptionPredictionUsingDeepLearning/blob/9192b8874f5bdf1eed3c99a6deba3896bd2ae090/ECP.ipynb",
+  "author_cell_zero_based": 141,
+  "method": "Monotonic LabelEncoder sorted-string order, constrained by unique energy-sequence anchors; only equal-sized gaps filled",
+  "limitation": "Order reconstruction depends on published LabelEncoder implementation matching this Feather release; does not restore timestamps or authorize physical benchmarks",
+  "identity_evidence_sha256": "a0e16f0586d08e6aa9a7fcd54ce4489199f50f543db06045819c07543c2adc3b",
+  "mapping_sha256": "dba3b332cdf7208771f776a8e428bdde6862c58a5f99435c400298bef3d6f9c1"
+}

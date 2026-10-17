@@ -1,0 +1,40 @@
+{
+  "schema_version": "oed-trust/1",
+  "generated_at": "2026-10-16T09:48:53.049830+00:00",
+  "status": "review_required",
+  "scope": "Feather V2 文件可解码性、参考哈希比对、LCL 户号表示与清单单位一致性；不认证完整性或适合建模。",
+  "findings": [
+    {
+      "code": "manifest.schema",
+      "status": "pass",
+      "subject": "runs/lcl-2012-encoded",
+      "evidence": {
+        "errors": []
+      },
+      "impact": "结构有效不等于字段声明真实。",
+      "action": "修正清单结构错误后再解释数值。"
+    },
+    {
+      "code": "units.declaration",
+      "status": "pass",
+      "subject": "runs/lcl-2012-encoded",
+      "evidence": {
+        "channels_checked": 5552,
+        "failure_count": 0,
+        "failures": []
+      },
+      "impact": "单位声明冲突会影响阈值和误差解释；通过只说明已声明元数据一致，不能反推原始测量单位。",
+      "action": "核实来源单位和采样区间，统一元数据；能量需除以区间时长后再与功率阈值比较。"
+    },
+    {
+      "code": "units.measurement_truth",
+      "status": "unknown",
+      "subject": "runs/lcl-2012-encoded",
+      "evidence": {
+        "verified_against_source_specification": false
+      },
+      "impact": "本工具未独立验证原始测量单位、时区或采样区间声明。",
+      "action": "用来源说明、标定信息或已知样本交叉验证。"
+    }
+  ]
+}

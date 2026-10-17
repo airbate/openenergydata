@@ -1,0 +1,2024 @@
+{
+  "official_archive_sha256": "149a6a9c43c622fd0a14b7d11be055665317d3018d9fb7e1043bd51420bfaea5",
+  "huggingface_commit": "30de733a9bc81c1a11d2f514ae054c6c0d1ab02a",
+  "partitions_checked": 168,
+  "sha256_matches": 168,
+  "reference": [
+    {
+      "type": "file",
+      "oid": "d550d06f7ea926b911679ad91c4882f694f48ed4",
+      "size": 50755532,
+      "lfs": {
+        "oid": "4997141df1efb62488305936c3d2aee395c456f475542bfbdcd5a2145479bd61",
+        "size": 50755532,
+        "pointerSize": 133
+      },
+      "xetHash": "795ba3c834f2866ad753990aeaaa7afe2471a44ed08eb4762e8aa2d054697030",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_0.csv"
+    },
+    {
+      "type": "file",
+      "oid": "d8a1c53f4b1317fa59815e00dfe17e5e62c7ab80",
+      "size": 50736845,
+      "lfs": {
+        "oid": "e2d9a8b89289edc7c6a25290b90635ac744cef347b7e0164f8c4bc2b8c0b55bd",
+        "size": 50736845,
+        "pointerSize": 133
+      },
+      "xetHash": "369a307709f4e32997c75d3be2d579472b94638ba895bebb948d1c5c500a7dc6",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_1.csv"
+    },
+    {
+      "type": "file",
+      "oid": "5c2f713b66c8a802b5bf0c7d58969f28d9767aa1",
+      "size": 50901009,
+      "lfs": {
+        "oid": "b331bd5d216d02d0a17e2fef63ad7c14a84170dc0cb8be0c661acfcd66b1c844",
+        "size": 50901009,
+        "pointerSize": 133
+      },
+      "xetHash": "07aece087c9e28c6312f29b90018b868aedb50942580906704db3d28ffba7cdd",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_10.csv"
+    },
+    {
+      "type": "file",
+      "oid": "d9d6c3a3edb3b26c11fe7854ef6e59cf9a3bb214",
+      "size": 50869633,
+      "lfs": {
+        "oid": "3b27bcb63aca48dcd97b520930b8c3c7c8d6f5f76bf1da66f7050e350f2f2dd0",
+        "size": 50869633,
+        "pointerSize": 133
+      },
+      "xetHash": "6b3021987c7b8412fb6be4a69655412a8e931813add4a894bda86e85a782a514",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_100.csv"
+    },
+    {
+      "type": "file",
+      "oid": "6ca40ac5b0139378870f0a0155e797013db3c316",
+      "size": 50866022,
+      "lfs": {
+        "oid": "301d4070e9409924d4283300a2c16c1dee18e9450e3fcaa437926f486580aead",
+        "size": 50866022,
+        "pointerSize": 133
+      },
+      "xetHash": "45a407a9c414994f938df66136585852c036a5bb348299fb639966c0e74ff285",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_101.csv"
+    },
+    {
+      "type": "file",
+      "oid": "3daeb922e2c6bc76bd8b93628a6cc126eba48627",
+      "size": 50878056,
+      "lfs": {
+        "oid": "e266174e084b5719d94689b7ab5d95e07527eb469c7badbf1b2bdda7bd72638d",
+        "size": 50878056,
+        "pointerSize": 133
+      },
+      "xetHash": "a8124d006e72f5c25255c1b51745f9cefb6c84aa97e2550f0faeee7daf578209",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_102.csv"
+    },
+    {
+      "type": "file",
+      "oid": "a16ac2a3771595994a8e0b576d01105761617453",
+      "size": 50914005,
+      "lfs": {
+        "oid": "9c0d1a436e03f04a1b4629c9537916233bc27320a09e2fca0b1db7ebe4f90fa8",
+        "size": 50914005,
+        "pointerSize": 133
+      },
+      "xetHash": "49e9c72a37eee16d59d7db32fb92e08ee94291684ab8778ded396e3589d5633c",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_103.csv"
+    },
+    {
+      "type": "file",
+      "oid": "74cd5754a685322a36bcd09ec1c0cea45d832a8c",
+      "size": 50856066,
+      "lfs": {
+        "oid": "75ba54218d0646710e9de8c01fe8d1853aed19713b8f3f1af5fedeb1f70528ed",
+        "size": 50856066,
+        "pointerSize": 133
+      },
+      "xetHash": "0a3735d6cc249c39a941731f02c1d7e6d8a93e2d5679ff36230aba9db2d76d4f",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_104.csv"
+    },
+    {
+      "type": "file",
+      "oid": "d0edb2d3945065b411e2090077d03bb87d3e1b64",
+      "size": 50922092,
+      "lfs": {
+        "oid": "1587e36dc4cb51eb3614e397fa991d112c21d51a2121b53586b98371b4621c07",
+        "size": 50922092,
+        "pointerSize": 133
+      },
+      "xetHash": "682244e83e3245123a0fbf4f0f7c20937d663ee1476cb60b4d146d6473f3ceb7",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_105.csv"
+    },
+    {
+      "type": "file",
+      "oid": "153c86e1f5ea33968ec22f96403b933cdc5203fc",
+      "size": 50882467,
+      "lfs": {
+        "oid": "3cf71caada3b91373d406bf8c1c3eb770546775e99b9ae9e3fb1d6fddd0ccd94",
+        "size": 50882467,
+        "pointerSize": 133
+      },
+      "xetHash": "4823e06b0785a3ebbe9ac29abf8c3cbadd7430495bf27643b8bd757d9551d892",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_106.csv"
+    },
+    {
+      "type": "file",
+      "oid": "530001da6205d2343952a487ff7d367e20ad3f4e",
+      "size": 50874549,
+      "lfs": {
+        "oid": "e12c8e56219a2473dc1cfd173f27f07c1526e1399e33343ceb6bd44f865ad507",
+        "size": 50874549,
+        "pointerSize": 133
+      },
+      "xetHash": "0bbd9a33b40ec06d6bc4a5b1c0202f36fa23590ee5b81b965bf1f568839203c8",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_107.csv"
+    },
+    {
+      "type": "file",
+      "oid": "cf870ec665bc2c90f374b2121b94c650c2fc1567",
+      "size": 50919802,
+      "lfs": {
+        "oid": "fae93d99e4ad41a456f8307f34b14073aa3da9450c5b6d9a6afed35bbb583c41",
+        "size": 50919802,
+        "pointerSize": 133
+      },
+      "xetHash": "46a4579b3fb12074068a5affff7d225543cdbb3c8550c51fe5f3a184bde5cece",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_108.csv"
+    },
+    {
+      "type": "file",
+      "oid": "e6b2c122b3a5326192f57790425aa914bb863116",
+      "size": 50885735,
+      "lfs": {
+        "oid": "bc6e42bfa130ac573b6ab663df5d30226f5a4bf172fd18921680eec7527e7fce",
+        "size": 50885735,
+        "pointerSize": 133
+      },
+      "xetHash": "6768fbd22634a2b1547edf4e6a1dc32e2ff68c8fa4c44cdcc55b5294c2d332e3",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_109.csv"
+    },
+    {
+      "type": "file",
+      "oid": "55ab615e1df2d071f47e068509f52aee9b160c95",
+      "size": 50900958,
+      "lfs": {
+        "oid": "cdcac7e23a253aeeec61c45271b2ad15eced5a067a82647aa1cc521f8cd498f2",
+        "size": 50900958,
+        "pointerSize": 133
+      },
+      "xetHash": "f167e5d459d4dea96b9bbffa6fd65d9fbb315f76847ffb32343b0f2e858afc02",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_11.csv"
+    },
+    {
+      "type": "file",
+      "oid": "a2cc9b7e62d88cd8954bcaacd8bf3586d5b9510d",
+      "size": 50826297,
+      "lfs": {
+        "oid": "d613640e01a51a0cc9ace46bb6edbc5fd1fcf4aa0dc771200a4b1a90ef0f312c",
+        "size": 50826297,
+        "pointerSize": 133
+      },
+      "xetHash": "1bd6d174485344a5604140b5d1b173de7edcf419fda9b03d626e0ec3c7bc169f",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_110.csv"
+    },
+    {
+      "type": "file",
+      "oid": "c1243a1cea9baf16c9e7dda5b907b7d8ba259341",
+      "size": 50826346,
+      "lfs": {
+        "oid": "da73121775305b1c0d99613160bf5936111837cbf3b99f65879529479489938d",
+        "size": 50826346,
+        "pointerSize": 133
+      },
+      "xetHash": "4e9dbc36c4056959196fdb3db9ecdf1e6977de83ae54ed406101d3eedf29f8cc",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_111.csv"
+    },
+    {
+      "type": "file",
+      "oid": "a0a7905518ce177c6cc24dd70fe440a25bdc8e67",
+      "size": 50769737,
+      "lfs": {
+        "oid": "82af5f19713d468775a961b9e01b64fd06d0ef75066fde7d331481444489da01",
+        "size": 50769737,
+        "pointerSize": 133
+      },
+      "xetHash": "152f0779fedbe822997ef0c599b57d2a47cfcaa55a70a1167480f68f870cf2c6",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_112.csv"
+    },
+    {
+      "type": "file",
+      "oid": "de28b2465381463b036e627bf7342114b486a616",
+      "size": 50891402,
+      "lfs": {
+        "oid": "624a2871c338a9bca41c6311ef2f2ef608ce6a1ddd69327d4a56684ecc5fc458",
+        "size": 50891402,
+        "pointerSize": 133
+      },
+      "xetHash": "17573612261880d9145305e8b0b658a9ead18e86787f05d321d49bdc459638a8",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_113.csv"
+    },
+    {
+      "type": "file",
+      "oid": "3fc30a2e898968607d1eda9ee398f6f6e4fe7877",
+      "size": 50793521,
+      "lfs": {
+        "oid": "89acededaa1391471b04c740a227b839d4dc558ca5929b485170b1451aaa1170",
+        "size": 50793521,
+        "pointerSize": 133
+      },
+      "xetHash": "df226b4d669342c93a55593d19078cd6d7180b16973042646cedbc3a5c63be27",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_114.csv"
+    },
+    {
+      "type": "file",
+      "oid": "416423ac857c2aaaeb229369f9c17820ce19c050",
+      "size": 50897099,
+      "lfs": {
+        "oid": "d3ffd64cafd8d0c3bad8e92813289ea18361c55a0fa00e3bcd26625dc7a05a72",
+        "size": 50897099,
+        "pointerSize": 133
+      },
+      "xetHash": "f99a4dc391ee276432c16323c53eeb6176ba99edfd667858181eb2a45c7fceb2",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_115.csv"
+    },
+    {
+      "type": "file",
+      "oid": "5d9256fc21cfd9fddbd5cc980e3e7b5b525de2bd",
+      "size": 50942763,
+      "lfs": {
+        "oid": "24d00e7e7f9723e14745fd64842a9d06a11e5ce557656f5ae918a8519b95e704",
+        "size": 50942763,
+        "pointerSize": 133
+      },
+      "xetHash": "59a21fbd7a44e302baa7f9a6979c7f26ac5245ae32d9c1414f0074245a76bbcc",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_116.csv"
+    },
+    {
+      "type": "file",
+      "oid": "420dfe55ccebe8ea08b969d5b836843ab9a984a8",
+      "size": 50836989,
+      "lfs": {
+        "oid": "67215d044173b70be7712bca1de59ef5ab41a738d1d3c3a1fb46a47b6eb6bc7e",
+        "size": 50836989,
+        "pointerSize": 133
+      },
+      "xetHash": "0dec14175b7eb4858931a28734dbaf484e777ca3e0699b6904fc244cf6e27a60",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_117.csv"
+    },
+    {
+      "type": "file",
+      "oid": "b83e8120504794f746e7eeb898ee0a65b2fdb05b",
+      "size": 50904583,
+      "lfs": {
+        "oid": "f22bb6fe69919e32459ca68da047532139464bba299e21fd32b26b75b042daa5",
+        "size": 50904583,
+        "pointerSize": 133
+      },
+      "xetHash": "23df0e774ab46ccba51c1e4b7851cead89472a60bacab1be1721dd9f4841203c",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_118.csv"
+    },
+    {
+      "type": "file",
+      "oid": "d477b364229f2fb8a766610adf28cd02c32fb635",
+      "size": 50835329,
+      "lfs": {
+        "oid": "c387083b881ee450b11adcf6b320f639b08445365aa1004ed24a0b68ea4b9bb1",
+        "size": 50835329,
+        "pointerSize": 133
+      },
+      "xetHash": "8bcc706254340cf41eec6794c361137ba47e99c00bada6c9ee5af17297545afe",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_119.csv"
+    },
+    {
+      "type": "file",
+      "oid": "8f856a60d20f1ecc4a18e54e88b6862ff537b146",
+      "size": 50812014,
+      "lfs": {
+        "oid": "538d29ee4dc1d6bcb3b68efeee990bf7c2a9bbfdb75bb62757c7d644684175cb",
+        "size": 50812014,
+        "pointerSize": 133
+      },
+      "xetHash": "850569f4bd76f7e45e5d64e804c79a348d9a1aa43a945eb3a98a31ef75003ac1",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_12.csv"
+    },
+    {
+      "type": "file",
+      "oid": "bd0a31668ead02d0f819a9d0f07ffd6be0378890",
+      "size": 50775113,
+      "lfs": {
+        "oid": "aeab62d4ba15d460064369b39b25dd9f39bffbdc9fe677e21ef33ed3a85203ae",
+        "size": 50775113,
+        "pointerSize": 133
+      },
+      "xetHash": "dc6ef32a4d493ddb5be637f35d35540470a5e495fc840e8ddc803f2a8765c2e6",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_120.csv"
+    },
+    {
+      "type": "file",
+      "oid": "24fddd4f21f7b467941adafa7266dc38d3b99997",
+      "size": 50860162,
+      "lfs": {
+        "oid": "ab48d6d87817248834cdab567ff9467680f5d967dd6ab4eee64f8f2ebbedc22a",
+        "size": 50860162,
+        "pointerSize": 133
+      },
+      "xetHash": "e5454e86bf227962e30958d0114ba115cbc09733486edc1b539b3b840dabfd19",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_121.csv"
+    },
+    {
+      "type": "file",
+      "oid": "9d7d7bd8494d4dbb142c0587ce6ba94f68c98317",
+      "size": 50895017,
+      "lfs": {
+        "oid": "c35640eef7fac8241b8a415a72a2d24903841e933d5b24f651d88b85a5f5c43c",
+        "size": 50895017,
+        "pointerSize": 133
+      },
+      "xetHash": "a7c24c44add21949098a239ea142bcf5ec3fa71b2607f47a114202bba16cfedf",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_122.csv"
+    },
+    {
+      "type": "file",
+      "oid": "dfd196034f20e7f17b6222d3ef40fe66aa40cc3b",
+      "size": 50900930,
+      "lfs": {
+        "oid": "9942212b95286ef48d5c1b586ee5a4a85614e8f314502c601ae1b4beb632a84e",
+        "size": 50900930,
+        "pointerSize": 133
+      },
+      "xetHash": "99268056cb0468408f9b6d6422cce390976859656481e2876c73346a6ea5e2c5",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_123.csv"
+    },
+    {
+      "type": "file",
+      "oid": "db62433794cb122a4be4000c5c8307a716139d4b",
+      "size": 50907315,
+      "lfs": {
+        "oid": "5a67f75c5b1191cde7a9c6a1742ebc16711231e0a79398d49165dc982ad590be",
+        "size": 50907315,
+        "pointerSize": 133
+      },
+      "xetHash": "8bf68057b86d98756eaca7c9f45332889793c2f53859d091aff7beca60d1cb4d",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_124.csv"
+    },
+    {
+      "type": "file",
+      "oid": "697fd591854fcad26724b380a2e9bd48fcd3bff2",
+      "size": 50836483,
+      "lfs": {
+        "oid": "7396f2341357244597225d728418e3a774801343ebfb63e2ba9d7c846d1c50ca",
+        "size": 50836483,
+        "pointerSize": 133
+      },
+      "xetHash": "2db9bda62b0be1f5c78a3bd615b90090e7e18fa4dddea5846b359d3b2968806b",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_125.csv"
+    },
+    {
+      "type": "file",
+      "oid": "914bb756861d9ff91a568c85c68c09ae48648774",
+      "size": 50897580,
+      "lfs": {
+        "oid": "9d4b16c5c7599627e1761fd720039b763964093c2927b0fb146748099d9b7c15",
+        "size": 50897580,
+        "pointerSize": 133
+      },
+      "xetHash": "065d8637aa8ba769a55c4b65716c1b55e91318a54a1b6edb184122a41fd9bece",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_126.csv"
+    },
+    {
+      "type": "file",
+      "oid": "86691ebc8b874946a30679893c4584fb5cacfb04",
+      "size": 50801872,
+      "lfs": {
+        "oid": "bb2ecc5d2b98e715839075cb9110fb765b9364ad4f35c9006718499facdd6e10",
+        "size": 50801872,
+        "pointerSize": 133
+      },
+      "xetHash": "5f00e442a79dc9971bbf373e5a4a6915947e4b102e2d9a93f06d63967e503180",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_127.csv"
+    },
+    {
+      "type": "file",
+      "oid": "91e8c6ac37cd4ae4e4d9382958a840c832234bc9",
+      "size": 50934985,
+      "lfs": {
+        "oid": "66025f7aaa41782879487b5f85007e54ea0a4a9bf0043839b3ea56d56741ba6a",
+        "size": 50934985,
+        "pointerSize": 133
+      },
+      "xetHash": "94e907d49699fc1f71fd4374bd34a31404e50144fdbd31d28c2031c9ac7a2de6",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_128.csv"
+    },
+    {
+      "type": "file",
+      "oid": "f70d59d1829088e624a81dfca4edf9cadf086832",
+      "size": 50922904,
+      "lfs": {
+        "oid": "4ff63ab8891e26f6e4b2f00f508f83c6ce7745991f3aac0d03ca5e13261a3281",
+        "size": 50922904,
+        "pointerSize": 133
+      },
+      "xetHash": "4e2c92cd64ce8b21c6e833aafa52236a504f195b28ae4274b9231f3dadd68e63",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_129.csv"
+    },
+    {
+      "type": "file",
+      "oid": "742ac5491ab08d0835b8bbe203ada8d50c1ce856",
+      "size": 50930108,
+      "lfs": {
+        "oid": "22afea449d9f670bf368841ca229315642aabec060feff804afa471c5f7401d3",
+        "size": 50930108,
+        "pointerSize": 133
+      },
+      "xetHash": "5fd6de97e382c22646dd03cb1db447f6c0257a9460c4b965e895edcee369ca42",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_13.csv"
+    },
+    {
+      "type": "file",
+      "oid": "93c1980a659d4caee82ab4bdf1ae1942b903b9a6",
+      "size": 50962578,
+      "lfs": {
+        "oid": "adc0d6f0acc645d1d789504089570ee19bfaa101146e431a29eba9849ef3f220",
+        "size": 50962578,
+        "pointerSize": 133
+      },
+      "xetHash": "ac604acb02d1fae452d9fc83577f6fd1bc04adeeaa5bcf37df6f61cf2bed8e1f",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_130.csv"
+    },
+    {
+      "type": "file",
+      "oid": "2362af3d77096d6d9ebccb4d7f4d7688af246a60",
+      "size": 50874068,
+      "lfs": {
+        "oid": "308887ae868fd9095844c78ffa57b8a79ec320b357ce43f0916733e236d4d3b6",
+        "size": 50874068,
+        "pointerSize": 133
+      },
+      "xetHash": "d76e868b859304228e871bf91acc5d80eef3f5f77a7ace7e3693e235b7bf32e7",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_131.csv"
+    },
+    {
+      "type": "file",
+      "oid": "ad4aeb224b237e6d83004f996dd1adffad57d481",
+      "size": 50895237,
+      "lfs": {
+        "oid": "ed2fd198a57bcb00e4d231c0da4c251fb374e5de88928d5e3253aaf0d5cd36a9",
+        "size": 50895237,
+        "pointerSize": 133
+      },
+      "xetHash": "375f0cc86016023fed47c4fa22a5142af466575a4c587cac029e5fe3ab95920c",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_132.csv"
+    },
+    {
+      "type": "file",
+      "oid": "2864c406ebafbd13a0795869afb1b8aaa8333661",
+      "size": 50888272,
+      "lfs": {
+        "oid": "97fced5430fa14e0cb8ae05ae155d810c52b3d882dfd666ff6db69d4c49de9bd",
+        "size": 50888272,
+        "pointerSize": 133
+      },
+      "xetHash": "dc349773a5204684ed1ef7557396ebb9695b155d1a7e0524e8dd5a1c6ff895d8",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_133.csv"
+    },
+    {
+      "type": "file",
+      "oid": "4910ac1c61169d4ffd794a194a49c3c28c3c367a",
+      "size": 50875206,
+      "lfs": {
+        "oid": "bdb85d3ed8dafb94a09d6d2e67bb08d802570d64d9acc505d8016b1bf218ef02",
+        "size": 50875206,
+        "pointerSize": 133
+      },
+      "xetHash": "1c0747aeb31afd6462f389a7d3c419513e1533aac7b555ab411de2deddd58958",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_134.csv"
+    },
+    {
+      "type": "file",
+      "oid": "191b8b671df69ff850815caf4c10030a7589ca0b",
+      "size": 50901897,
+      "lfs": {
+        "oid": "9c18c4f2ceb58a0dcc863f506cae3bf848f382a0e6a6020e6fbc80408a920f63",
+        "size": 50901897,
+        "pointerSize": 133
+      },
+      "xetHash": "a6272b1276348a33b9a517e50bc46d07589a6d311ad6c39568469d153f3cb1da",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_135.csv"
+    },
+    {
+      "type": "file",
+      "oid": "859ce5f780a8ddd37e3ff2c0c25aeef24f84668a",
+      "size": 50817644,
+      "lfs": {
+        "oid": "f9d7a3e3dcdfa603bb64bacb1bbdb2e22939e5d34c5fb7523ddc128b76ba79b8",
+        "size": 50817644,
+        "pointerSize": 133
+      },
+      "xetHash": "a4df130fd081a495eb436ac79cc664f75b044414f97fa1a07e178608b41e3236",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_136.csv"
+    },
+    {
+      "type": "file",
+      "oid": "a5d6e086ba90dcc1222f24d51f400bdbf8820115",
+      "size": 50884241,
+      "lfs": {
+        "oid": "78c5b1d59a473bcadad736805ca9c88c553dbbfddef9ce9a26365207ef40d4ec",
+        "size": 50884241,
+        "pointerSize": 133
+      },
+      "xetHash": "5c160c398e3ceafe2d4c838a525bc503865d0c69d3fceb12728cea19bbc96ee5",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_137.csv"
+    },
+    {
+      "type": "file",
+      "oid": "d9b2b3bd4fef6c732665aeafb9baf240c0fffd1e",
+      "size": 50881173,
+      "lfs": {
+        "oid": "03349532de7ac6f0d2a7857f056db2641e35fe7cdcc368433719b3d0aba19312",
+        "size": 50881173,
+        "pointerSize": 133
+      },
+      "xetHash": "8533691702384a1ee609c6c4271f2ee611ca65590d7b17fafe58c0e5cd8ca032",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_138.csv"
+    },
+    {
+      "type": "file",
+      "oid": "554db41f70484cb438169e0696ae2df095a61523",
+      "size": 50816606,
+      "lfs": {
+        "oid": "3a8d67d89cd37f9a07ee407d8cafa9b2fc11016ff5c2bd9c7a083821172faa7a",
+        "size": 50816606,
+        "pointerSize": 133
+      },
+      "xetHash": "24a8decc69c211c92bac76e182fe2038bb0fbf22260caa2e22b80b9328d0c0c3",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_139.csv"
+    },
+    {
+      "type": "file",
+      "oid": "a41681a1d7d2f1c4a78820c1e1548e9f59450715",
+      "size": 50884549,
+      "lfs": {
+        "oid": "b2b2f8762a069bee825f14b56593ad6989e2c2f38dab406addaed907e73bb31b",
+        "size": 50884549,
+        "pointerSize": 133
+      },
+      "xetHash": "ae82fcc346e42cce67afd609f021c2bedebc3108d8d82b84f5b09eda88266107",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_14.csv"
+    },
+    {
+      "type": "file",
+      "oid": "3c240b659b725064ef8bc58fed5c717ce6aaffff",
+      "size": 50888697,
+      "lfs": {
+        "oid": "73af593201cce829295fdbbfec998a46dc9c86c05de15b9b0c94eed7859c6959",
+        "size": 50888697,
+        "pointerSize": 133
+      },
+      "xetHash": "266b6a9e10fa5f4e4fb8c81750f635cb36821c9c664f14bcacb8bcf4c4f4f9db",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_140.csv"
+    },
+    {
+      "type": "file",
+      "oid": "2493cd0d424613cb1b70d0e015bcc6c83e0952d9",
+      "size": 50863171,
+      "lfs": {
+        "oid": "595957f9bc70e4640c1d0b7568982af059c9d1332641a8433f9f79ecb78bb77a",
+        "size": 50863171,
+        "pointerSize": 133
+      },
+      "xetHash": "8ea9ed5dfe493ebc50c8f0b7191446e9a9573980ef3e57aa099e477b30b7290c",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_141.csv"
+    },
+    {
+      "type": "file",
+      "oid": "4d3d9117943d904572da9d4bc7906c23443b8e16",
+      "size": 50893160,
+      "lfs": {
+        "oid": "85fbc2cc2ba7d8b2b888c3042df4d4718aa263814707f81841bb2a98f7b490cd",
+        "size": 50893160,
+        "pointerSize": 133
+      },
+      "xetHash": "c0c5d2d48fa8e036c32d4b01209c68dbe3dacf88b20e12afe9256637cff01698",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_142.csv"
+    },
+    {
+      "type": "file",
+      "oid": "46f0346ade493e509631801bf25ae2947a2e72d7",
+      "size": 50869381,
+      "lfs": {
+        "oid": "6e45bafb58a8b439f4a42041573a13bc35a0461f7d7201c3ceb5214a2e301af1",
+        "size": 50869381,
+        "pointerSize": 133
+      },
+      "xetHash": "f309656d863722ea06c5f42db030e1c219e0a331c11c0d829d2188369137c6e5",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_143.csv"
+    },
+    {
+      "type": "file",
+      "oid": "3126585112ef8e7e4517852268872b6c5415030e",
+      "size": 50897911,
+      "lfs": {
+        "oid": "d0ebb59dd1c84f2913badf437e5a6963892004c330f1395084c3f1f3a7882f85",
+        "size": 50897911,
+        "pointerSize": 133
+      },
+      "xetHash": "94733da835ea30f6bd6e7b062936c67ee24e72359e31f5bc6054dc1b77b0c209",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_144.csv"
+    },
+    {
+      "type": "file",
+      "oid": "00c0e0d8df2e89e14bd0e3703940f14827546589",
+      "size": 50851765,
+      "lfs": {
+        "oid": "e65c7c4abf339446d98cdb3e76e62d3861f51e27a1c978970f5cc6325cd0bdfe",
+        "size": 50851765,
+        "pointerSize": 133
+      },
+      "xetHash": "c3becc9bab943e564444b1516d2b4436c6a6a5d4c3ddf115f15888f2bec37c57",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_145.csv"
+    },
+    {
+      "type": "file",
+      "oid": "ef94bb6074d564045ef92172aed523edfe5276cc",
+      "size": 50724016,
+      "lfs": {
+        "oid": "b36ef685a486eb246e539fce1f77d468d851194c2dcd803c6fc6e6873f024b73",
+        "size": 50724016,
+        "pointerSize": 133
+      },
+      "xetHash": "f7e301fc063d91ff217e2c268c91d20a580f03d8dca8cb66a2b3b7584408041d",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_146.csv"
+    },
+    {
+      "type": "file",
+      "oid": "619b9337f339c4ba978707be00481b3aa4491862",
+      "size": 50887350,
+      "lfs": {
+        "oid": "14e45cac6cf607478e60bc6695e3463de28f7550ee3275dd320681d2a6bb3de0",
+        "size": 50887350,
+        "pointerSize": 133
+      },
+      "xetHash": "e40b986a9e3575c70f97947e630ff0854a65d759924486885e563f88a1fe3a08",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_147.csv"
+    },
+    {
+      "type": "file",
+      "oid": "09edd3b4299e12e0e73a68e31b5b83fa77c4847d",
+      "size": 50841200,
+      "lfs": {
+        "oid": "1622f0246d9793362a1898e3f0336473f9996a55e33380a8e422d3f61418c686",
+        "size": 50841200,
+        "pointerSize": 133
+      },
+      "xetHash": "d77d8822629ac2266e1bf451155b776c8e8baf5f59d1af98c36615ca797e5d82",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_148.csv"
+    },
+    {
+      "type": "file",
+      "oid": "8b9fb76dde3514ea3705dd7154bc2e2428a7eeff",
+      "size": 50806477,
+      "lfs": {
+        "oid": "00c0ec3f369f34d69841a7a774264cc7eefea2a5386201a814fa436fc2cd0c05",
+        "size": 50806477,
+        "pointerSize": 133
+      },
+      "xetHash": "268c8c522cbb6b88c4b4d86e7c6f17bd01cf25068494586f5b300b157770a0e3",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_149.csv"
+    },
+    {
+      "type": "file",
+      "oid": "8a74e0fa8038dcdfc62bf17a664558bb6cb9ff3d",
+      "size": 50893164,
+      "lfs": {
+        "oid": "ced0ff5d484a91753f344de13c42d91913aad22f8d2e42a543912a2c2e56d33f",
+        "size": 50893164,
+        "pointerSize": 133
+      },
+      "xetHash": "4a36e4c6d44b4fec4b96c880696032ebd90bc5c307ee1b2141d712718301c118",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_15.csv"
+    },
+    {
+      "type": "file",
+      "oid": "3554d6e1f7ac0cd9c75c48e1337c5fd0427c0d54",
+      "size": 50894128,
+      "lfs": {
+        "oid": "74fe2907c34769c49d831e3ce320c39185886295e2861b244d041ecd9b13028e",
+        "size": 50894128,
+        "pointerSize": 133
+      },
+      "xetHash": "b790bff4f6720dfc6935bb8a52da1736f1e44b25d5de0b7829f817c843950bbc",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_150.csv"
+    },
+    {
+      "type": "file",
+      "oid": "c737fddba4fc888a36070001d173ee12eb6378ac",
+      "size": 50863015,
+      "lfs": {
+        "oid": "5b7772b4166bd383fd42adead01dbf8693bbb9041256795a12356c1bdf8969d8",
+        "size": 50863015,
+        "pointerSize": 133
+      },
+      "xetHash": "02cb2b46e9389fc313ce48e781e70abb58fe672eb27d8da11771c0de62e913e1",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_151.csv"
+    },
+    {
+      "type": "file",
+      "oid": "252d700d93a807d5779e6ae5df7520a215ede4e9",
+      "size": 50868496,
+      "lfs": {
+        "oid": "f4f5684c7922bf170c77dd784afa81bc4be62edc9e0362f21e1df781af836a0f",
+        "size": 50868496,
+        "pointerSize": 133
+      },
+      "xetHash": "f747b96c6343e6f7efb95dc823afc8f231f2bc81f47dc942dc0166802d8b799a",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_152.csv"
+    },
+    {
+      "type": "file",
+      "oid": "4c170077860debf5d265c601fcce608f8c5cdcd2",
+      "size": 50771311,
+      "lfs": {
+        "oid": "f9b6cfa126a8ed7c739226f96072a72f3e0436094af4494fc1fb10ffeea17a29",
+        "size": 50771311,
+        "pointerSize": 133
+      },
+      "xetHash": "2bf7b9a16624d8fa2c02333953b42ba0701920fd325b85d26f93ffcdcbe917fe",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_153.csv"
+    },
+    {
+      "type": "file",
+      "oid": "2040fd6b401d71c6eb695a9983273eda0a60aaef",
+      "size": 50907971,
+      "lfs": {
+        "oid": "2fcc1c039de9c87005b2f4b438e0a419881b88165c72169cc7def123a58c9a80",
+        "size": 50907971,
+        "pointerSize": 133
+      },
+      "xetHash": "186282ea556b8385ac9832f3b0e9828055c76498d3127f3eb16e1ed1821769ab",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_154.csv"
+    },
+    {
+      "type": "file",
+      "oid": "34ad287ca81bd26d27d5b61658aa98e696e0479c",
+      "size": 50898078,
+      "lfs": {
+        "oid": "09eca9df114de21020c0a72825de446fcecc5ecaad740f58d40c54a4f8e8a003",
+        "size": 50898078,
+        "pointerSize": 133
+      },
+      "xetHash": "27b3cf8a0251f4c668351f4a71a7490e6472ab2f3977620780b25914e982a8eb",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_155.csv"
+    },
+    {
+      "type": "file",
+      "oid": "e61e7dc2c86f7bff294af28e51d3daafecf9f673",
+      "size": 50909920,
+      "lfs": {
+        "oid": "24090b16639939040728a12a01edea8a4b0f5e15bf04f4edb6c3be4632a9f86b",
+        "size": 50909920,
+        "pointerSize": 133
+      },
+      "xetHash": "4a67c290348716768884d9eed529767dcfe58aa55783cc7eb70fbee16d1a0da0",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_156.csv"
+    },
+    {
+      "type": "file",
+      "oid": "2447a96ba119a0b1376f15c105d5635b8d53412a",
+      "size": 50900515,
+      "lfs": {
+        "oid": "02285ba9496e57f80d7e778e217ab9cbe9bb743b54006f7e11a3084d106926e6",
+        "size": 50900515,
+        "pointerSize": 133
+      },
+      "xetHash": "1b6abd3f9aac586e120be14750cabcf8cdcf70fbda21e99cb83c18e0b6ef124b",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_157.csv"
+    },
+    {
+      "type": "file",
+      "oid": "92855a93997d1cc8e146578d0885fbd2281c49c0",
+      "size": 50883555,
+      "lfs": {
+        "oid": "919179475de04044b9393f67f3e3223db084ca56c2db5c5f96e83085c00a0afb",
+        "size": 50883555,
+        "pointerSize": 133
+      },
+      "xetHash": "39a0ef5144c89c7dff805bfda2c1a9f642a87864c4fb6f54d4a17bc2a3aed878",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_158.csv"
+    },
+    {
+      "type": "file",
+      "oid": "6b167db310f11ffb6422b61ce172dec48d0975f0",
+      "size": 50902055,
+      "lfs": {
+        "oid": "574545ca7b80826e1374f9f36adef30d45a051cd32df40713359ec14da9e634b",
+        "size": 50902055,
+        "pointerSize": 133
+      },
+      "xetHash": "f9bcc8ff2955260444c81cc8640e134c19163d470f978db5fd7f3fc2f0c09a0a",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_159.csv"
+    },
+    {
+      "type": "file",
+      "oid": "a7813c0cfeb0488264ff476601c396db8c8135ca",
+      "size": 50925106,
+      "lfs": {
+        "oid": "2684e9d77efdf0a86be50cc94a4afffb7fb1f668e9ff031356cbfa0b37a2a4b9",
+        "size": 50925106,
+        "pointerSize": 133
+      },
+      "xetHash": "93a729083c6c08469989a0e15feb5de12e6523e7d694fd7345a97e224e2aacb4",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_16.csv"
+    },
+    {
+      "type": "file",
+      "oid": "2ce284a0a732fb841c12087eb9baad30f33802a8",
+      "size": 50917490,
+      "lfs": {
+        "oid": "68e050de7bb5527b2fdea09603c00c5f3b15a8f3c1795a07959df8dd7b24d7ea",
+        "size": 50917490,
+        "pointerSize": 133
+      },
+      "xetHash": "1254e9cf48ddf969cb90d1abfc779cd82d161dbcd3eafe10e45a0bf78b82f0a1",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_160.csv"
+    },
+    {
+      "type": "file",
+      "oid": "2aab8523a1cda1ba16d72cb0ca44f08bcca489ab",
+      "size": 50912484,
+      "lfs": {
+        "oid": "4c10d063c09aa5ef63f378c9cc573f57c976053853213942f5cb671e652a5459",
+        "size": 50912484,
+        "pointerSize": 133
+      },
+      "xetHash": "2d919fd7bc2ca89524b588288718e4c4d09f691f3507f166fca143b752e6b551",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_161.csv"
+    },
+    {
+      "type": "file",
+      "oid": "baa177e9aa1bed55543a35eef9196bd1c27b54cd",
+      "size": 50823294,
+      "lfs": {
+        "oid": "b4a159b28638e85caf09c7f46ccdc27dafa526402b9d7e188224db2edd040486",
+        "size": 50823294,
+        "pointerSize": 133
+      },
+      "xetHash": "f006fffb184860712e6417c650e2698f2fc6a44c0b5913c19b1b8059067b19b8",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_162.csv"
+    },
+    {
+      "type": "file",
+      "oid": "a0746bd2270b919d06bbfc5cf664ca1d88ea4511",
+      "size": 50897957,
+      "lfs": {
+        "oid": "3385a1ab0a9498368aae83a21686768809622e2f1815cf3503f4d259a494a5d1",
+        "size": 50897957,
+        "pointerSize": 133
+      },
+      "xetHash": "44bf3c7fbee2b2403ec79cdfe66d057d7b77a9160fee47f348f4a5597a2ea82a",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_163.csv"
+    },
+    {
+      "type": "file",
+      "oid": "5fe814571b1c7cb0ff7f81c4876a91ec5834cd3f",
+      "size": 50798090,
+      "lfs": {
+        "oid": "1a14d43bc453465b957774b3b6956572312586968fb59bfd4562d7e2587f992e",
+        "size": 50798090,
+        "pointerSize": 133
+      },
+      "xetHash": "7397c76941489b2067b168645c98a2241836f0e41eb184f08f8bcfeec72bd752",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_164.csv"
+    },
+    {
+      "type": "file",
+      "oid": "80f82d4fa940e035af8b678bf58b6a2522790cf9",
+      "size": 50903117,
+      "lfs": {
+        "oid": "7f923ebf4a40fe3e5cf5c989f75b0ad8f09df320b995c6b4b9851d6b44752837",
+        "size": 50903117,
+        "pointerSize": 133
+      },
+      "xetHash": "fd3d37eac54c104bc5796f7036ad3d00efce778524d09393666075094f8ac410",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_165.csv"
+    },
+    {
+      "type": "file",
+      "oid": "ed1d966b3f0395e7d047c2a2cc039cb2428bae82",
+      "size": 50910939,
+      "lfs": {
+        "oid": "9878912ca395a020b4f85720b4792d295ae04215d2f813b276fa14cdce60a4bf",
+        "size": 50910939,
+        "pointerSize": 133
+      },
+      "xetHash": "febdea1d7a1c8da7a5291a6d11a850b8f1f4a8b56a9ee8881850278789c3dbcf",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_166.csv"
+    },
+    {
+      "type": "file",
+      "oid": "cdcd517e40f912e99a2d283c8941da7450e1f2d6",
+      "size": 47441437,
+      "lfs": {
+        "oid": "6b4b951f1ab95a9846b37d462eadc619c9fbf479bf350c8941adf8694e34ee51",
+        "size": 47441437,
+        "pointerSize": 133
+      },
+      "xetHash": "04d699b6af1eb22ae070cadf327644e8edcb4d530224238360551b6e750325fa",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_167.csv"
+    },
+    {
+      "type": "file",
+      "oid": "d2b11f8a18e99804331d37751f34d57ddafb20b1",
+      "size": 50817969,
+      "lfs": {
+        "oid": "a807c6c3b35490b53caa851f51ea85db7963c1dd90879104caf2dc935961d364",
+        "size": 50817969,
+        "pointerSize": 133
+      },
+      "xetHash": "9575fc223e86d4cb9d9d5ad86f3126512d6336446f68ade290f0cfb3a24f8759",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_17.csv"
+    },
+    {
+      "type": "file",
+      "oid": "d2f9dce531ad682b95990c6ca7c285029baa326f",
+      "size": 50871026,
+      "lfs": {
+        "oid": "8e79b2a10e9d24b95c5168112ed7b2549dc8a6588045db842e405f83ec421e78",
+        "size": 50871026,
+        "pointerSize": 133
+      },
+      "xetHash": "5176c6c17695438c9319a55e04d192b162ec56fd1e2734b2a202082dd8939bf4",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_18.csv"
+    },
+    {
+      "type": "file",
+      "oid": "ce01e5da8304c290bca8df0b1b3b22a0ba92f077",
+      "size": 50867119,
+      "lfs": {
+        "oid": "ee00ab1913579dc371a06a4c24bf6ccd15d209eb545cced1d261dabc3095748f",
+        "size": 50867119,
+        "pointerSize": 133
+      },
+      "xetHash": "b37e36200ff94e5f209828cf95f885fb2d22678b5368222ca81cddc840051e70",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_19.csv"
+    },
+    {
+      "type": "file",
+      "oid": "21ad6fa14398d40b2e14e1587d20aa2df134850e",
+      "size": 50880880,
+      "lfs": {
+        "oid": "07516831f44ff2cc0a1647d3e9cfcbac92415890d3666cdc0d658bcef73a14b9",
+        "size": 50880880,
+        "pointerSize": 133
+      },
+      "xetHash": "595016fe5ac762e33d37fdbdb4880f157a93e0a4e8fa233de3305005c18c6704",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_2.csv"
+    },
+    {
+      "type": "file",
+      "oid": "654aae6faa0e69bde69db175ebff0cfad93f78f6",
+      "size": 50888818,
+      "lfs": {
+        "oid": "50d7c654b32f197c6b4a745e4b69f47dadf355e521ada67f3730458b0d4cf1c8",
+        "size": 50888818,
+        "pointerSize": 133
+      },
+      "xetHash": "f54db5b318726c61307224f5dc57e9b7591afb90b06245b47709804f72370363",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_20.csv"
+    },
+    {
+      "type": "file",
+      "oid": "2d25130d0fb8aca92f20713e3bd38ea852eacb76",
+      "size": 50867991,
+      "lfs": {
+        "oid": "e4a9b6b51c70dca5574b52ed7dd984f92503e09073e9630e33fddf343ea47fe2",
+        "size": 50867991,
+        "pointerSize": 133
+      },
+      "xetHash": "42791f7edd72f7ef7d96b9269595e75268b403ce47a75704955d43112e8fd48f",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_21.csv"
+    },
+    {
+      "type": "file",
+      "oid": "b8091421219cbebe7c3a0f86fec970f1476bc111",
+      "size": 50842196,
+      "lfs": {
+        "oid": "32e92ff71011b68427d4fcf440a5db3f1f701bf00ee72871cb88bcaa4250d84a",
+        "size": 50842196,
+        "pointerSize": 133
+      },
+      "xetHash": "ce531df7b48bc0cc4a8153692770f5681188d2dfa2ec2645b6fd2629b9d00a0d",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_22.csv"
+    },
+    {
+      "type": "file",
+      "oid": "97f6719a0af251daeb4d5c155bb6ee52681ac7c3",
+      "size": 50902847,
+      "lfs": {
+        "oid": "fc791b23b0b8d9ef2cca0d584e3f2bdfeb11db1645f6dfece9b954972641102a",
+        "size": 50902847,
+        "pointerSize": 133
+      },
+      "xetHash": "9ab76fb8952f0bdaf08480cc8433c1d87c5a42ec7ae4f0dce363d57e39f35d7e",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_23.csv"
+    },
+    {
+      "type": "file",
+      "oid": "b6f1e6842ec5116fd2297160af6086e9d33e8edf",
+      "size": 50867811,
+      "lfs": {
+        "oid": "fcf0c24fc37d96c25486da78ddadc54de168d69e6a3b80782d82782bb04b89d7",
+        "size": 50867811,
+        "pointerSize": 133
+      },
+      "xetHash": "c5ff814d82be57543f5f7e5d915e25694b27cff5e22164f9a9a6a99ce75eb54b",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_24.csv"
+    },
+    {
+      "type": "file",
+      "oid": "148a4716f1e274e69a0262155616afc2e6ae858b",
+      "size": 50896495,
+      "lfs": {
+        "oid": "0e53bf79eae8432b0700f641565c85bd8c947e9430f20e07d59b1b60de48bd2c",
+        "size": 50896495,
+        "pointerSize": 133
+      },
+      "xetHash": "9e4dd3a24cedf343dcb28e2a6c110531f26522436434c20b41b38bdf8f899562",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_25.csv"
+    },
+    {
+      "type": "file",
+      "oid": "91db3f965413c4bed727bc8ab9f751f9f78199f5",
+      "size": 50896352,
+      "lfs": {
+        "oid": "b8e6e12fc6be9f6b4d1a3a29d7fff1bc591a3fffed6e08a49e1bd65dad5d46b3",
+        "size": 50896352,
+        "pointerSize": 133
+      },
+      "xetHash": "6cae61cf9dbae0ec97156ce56c2359a93460d519e6b85373974a65cca5452e6b",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_26.csv"
+    },
+    {
+      "type": "file",
+      "oid": "611048da34db7b4cb975884290965b33847624ed",
+      "size": 50861182,
+      "lfs": {
+        "oid": "525a33129b0c04242a31c24e84935d3a2a235675abc80598a7734aa4fc25708d",
+        "size": 50861182,
+        "pointerSize": 133
+      },
+      "xetHash": "d9880661469aaf53f7beecee04a1fe0bd7e64cbd5fc7c4207572a1919c84030d",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_27.csv"
+    },
+    {
+      "type": "file",
+      "oid": "eeefcdedee76e0577c7e9a86f737bb5c39de52a9",
+      "size": 50856855,
+      "lfs": {
+        "oid": "389615adf4dd1463674484f973b4dcc8b17c80abfcae9cec332592cc424d4ae4",
+        "size": 50856855,
+        "pointerSize": 133
+      },
+      "xetHash": "6f15b733b4833abfdf078f6624705464fa72c8a2dcc7d36df3e72b0008ad49b6",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_28.csv"
+    },
+    {
+      "type": "file",
+      "oid": "1c8ed0e9d230beb3a843f3c3e7141559c7ae6d4f",
+      "size": 50836540,
+      "lfs": {
+        "oid": "833379b4a731636e746498f3333638eb776c60959518f10fff1bea2fb9a48df5",
+        "size": 50836540,
+        "pointerSize": 133
+      },
+      "xetHash": "9517597f6895ab3ee9d08c9721aa74cc5756a50e5461f39e226534f825861610",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_29.csv"
+    },
+    {
+      "type": "file",
+      "oid": "8e2d82622653d1a987f1a009befc9e913d64b5f7",
+      "size": 50920497,
+      "lfs": {
+        "oid": "75c7d9c67a93f1e3b462e7300de22e83631fde009e170db9025923ba72cfd581",
+        "size": 50920497,
+        "pointerSize": 133
+      },
+      "xetHash": "f2f0d998cafc30d9da6aa9fe5b9aafed648137f5f9b765fad31467fadffa1e7d",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_3.csv"
+    },
+    {
+      "type": "file",
+      "oid": "65a7e419353d4deb27d3ca5b6b743ff7dcac6daa",
+      "size": 50876324,
+      "lfs": {
+        "oid": "10555358ed52d52017b4a877ecff80c2efc64f5c127ad65366744dc62b42e909",
+        "size": 50876324,
+        "pointerSize": 133
+      },
+      "xetHash": "69f41e4a9d7e3e2ff8bb9a16d1f4ff0fcbc11062d8224b6473cb9c8b14c9b676",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_30.csv"
+    },
+    {
+      "type": "file",
+      "oid": "fd7651b94f85a381ed30c32af2cd8733f7b0f2b8",
+      "size": 50920568,
+      "lfs": {
+        "oid": "95638c553539659637e2d45c23830cfe1c0dfca495a268075723abbeeb256d14",
+        "size": 50920568,
+        "pointerSize": 133
+      },
+      "xetHash": "e5b800b6130b2221619e56435428ac084fd80a1c6b1af3d56d5e64c0350f5f9f",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_31.csv"
+    },
+    {
+      "type": "file",
+      "oid": "52c269b9334bf5dcc063f63166aabd6aad538ce5",
+      "size": 50898824,
+      "lfs": {
+        "oid": "a7cde8a2cb7df5bf1b16471184a11ae14253e2d182fe0949473ae102ca5539a4",
+        "size": 50898824,
+        "pointerSize": 133
+      },
+      "xetHash": "706fda842b4218183b791f71440001ec3196be1dbd78a9bf832d519ac39f53b9",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_32.csv"
+    },
+    {
+      "type": "file",
+      "oid": "e0cf323b7e0f73096a18c25b3fc7627fcb67c1e1",
+      "size": 50859002,
+      "lfs": {
+        "oid": "578c5ac0eaf167c556cf4045f03112475324af4f74751d3deb9d9a7e79c66b26",
+        "size": 50859002,
+        "pointerSize": 133
+      },
+      "xetHash": "6ec490d385157423faf03808b916b32b99630c9d11d3527589e0333525f71fd9",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_33.csv"
+    },
+    {
+      "type": "file",
+      "oid": "4ac77e1c6e2dd0dad1310ea128b1c401b02a86d3",
+      "size": 50634562,
+      "lfs": {
+        "oid": "794e182bfd80bd8766c286ae2291cc44586a7681e69e145edd9630065820c27d",
+        "size": 50634562,
+        "pointerSize": 133
+      },
+      "xetHash": "a758573e79779c0f1b7545455c9ae3eadd9428f5c2a6771fce252dbcc6df07f9",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_34.csv"
+    },
+    {
+      "type": "file",
+      "oid": "2386d7ad935696e821e2030e40180773557c7c9b",
+      "size": 50815761,
+      "lfs": {
+        "oid": "d83100722fdc788393056315e3cabde12d86d664a47f41ff876f4c7d9aa01c56",
+        "size": 50815761,
+        "pointerSize": 133
+      },
+      "xetHash": "0b48860288f3ff98c7ecda9df23e156f1afccde19e2a594790577f32971a14b9",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_35.csv"
+    },
+    {
+      "type": "file",
+      "oid": "0e2b9e915e040c944ef67b4fe87f41277057394e",
+      "size": 50895764,
+      "lfs": {
+        "oid": "c7df9a43aab1d4b8f2bab90cd5ca25908a1970b46ca553a26d0f358050dcdf1c",
+        "size": 50895764,
+        "pointerSize": 133
+      },
+      "xetHash": "b865bffc120a320605660bc493eb83c2632e4f8317586af711e4e321297c040a",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_36.csv"
+    },
+    {
+      "type": "file",
+      "oid": "4162a2d9f058344b9b0a6976744f1e86e6f2f309",
+      "size": 50838942,
+      "lfs": {
+        "oid": "0ff2ed389a9002455dde46249ffb820d3d0438840af4029682e44cb93ea0a6d5",
+        "size": 50838942,
+        "pointerSize": 133
+      },
+      "xetHash": "325e509ec755e214600ed4544aa0056cb2bbbcc8b23a510fd396ef9bdab07698",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_37.csv"
+    },
+    {
+      "type": "file",
+      "oid": "5487595d0202bbb66d0689c5ae9fe5e7dda74f11",
+      "size": 50894361,
+      "lfs": {
+        "oid": "e9839ddf5f06a33fbc8817a1a6bcb92cc725e2868b64a65dabc9882c1f9af0e7",
+        "size": 50894361,
+        "pointerSize": 133
+      },
+      "xetHash": "6b0c5e5700acf7e9e3be98ad24bdd1da0a13f457ebafd57f1136fccc126dfaa9",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_38.csv"
+    },
+    {
+      "type": "file",
+      "oid": "c146258d53b401d96600476847d6570545b4298f",
+      "size": 50884989,
+      "lfs": {
+        "oid": "ad0b75a8829ac79b8ba451ee1304897510ca2b6db44af5d72f59d8a36b5165fb",
+        "size": 50884989,
+        "pointerSize": 133
+      },
+      "xetHash": "5ff89d6ae60e9a6e7c71660d5272a07c65454089a8cb39af8ff2683127805751",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_39.csv"
+    },
+    {
+      "type": "file",
+      "oid": "ad1971c1a5090b276c7926e7489cac43b6adbe81",
+      "size": 50849847,
+      "lfs": {
+        "oid": "bae7435ff10f52336341328569af56f963f7625bb9340eb867397249647d9d81",
+        "size": 50849847,
+        "pointerSize": 133
+      },
+      "xetHash": "732fa6a89db3a06392cc63be247ce9edffcae9cf5c1af2f320c98eb7d9860e67",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_4.csv"
+    },
+    {
+      "type": "file",
+      "oid": "809c0bb7c302331e227b1b28179b6d8ab7bf2a55",
+      "size": 50914194,
+      "lfs": {
+        "oid": "21e58ee9d8e61cec60f6e9f5b573054b0b011621431bfb21d36fdaf2a7d7970d",
+        "size": 50914194,
+        "pointerSize": 133
+      },
+      "xetHash": "877e316c61992c4354cca38fbcecaa74d9a6de09f655be1625fcbf777ef349c8",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_40.csv"
+    },
+    {
+      "type": "file",
+      "oid": "7f14dcbf12c59172bca65ae780fa183108ed392c",
+      "size": 50866256,
+      "lfs": {
+        "oid": "191a1d69d06a63a92a088be7b4654a3be237fd988df51df2408a5594c4e66737",
+        "size": 50866256,
+        "pointerSize": 133
+      },
+      "xetHash": "b3f6757c8fe7f945b09b840980739b1d58fbc4b1443e24af0f69c641de2ff8a6",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_41.csv"
+    },
+    {
+      "type": "file",
+      "oid": "e856c887815501f41930f346f8cffde45b39e789",
+      "size": 50875375,
+      "lfs": {
+        "oid": "1262d296315e5635d576c0e26e86920eed6f8d2c622edde99f848a737eb1efc4",
+        "size": 50875375,
+        "pointerSize": 133
+      },
+      "xetHash": "20236472a74ef1715e4ebfee13ee711aba4aa415d508571ec216419256b32c20",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_42.csv"
+    },
+    {
+      "type": "file",
+      "oid": "a656a0568b239602e3c92bcd130835ebddd01860",
+      "size": 50915734,
+      "lfs": {
+        "oid": "117b48e7919c63d13a9d97b04c4e171c45c17a2f1f67b9fd66d90942cdca87ce",
+        "size": 50915734,
+        "pointerSize": 133
+      },
+      "xetHash": "811a595735bc49028551b0b1c41a6abb8d8b908a055620784a8346502d79f0e1",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_43.csv"
+    },
+    {
+      "type": "file",
+      "oid": "dc66dfb427a2d64983cd858a07b3665130be28e3",
+      "size": 50953897,
+      "lfs": {
+        "oid": "4a8859c7cde91329100c42d90f515975ef863a7b46e6e3f7fb9ae2b816977927",
+        "size": 50953897,
+        "pointerSize": 133
+      },
+      "xetHash": "8daf93ecf9d8712819771c734c9282ff7fa99b0630ba346c8a263cf9c156048b",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_44.csv"
+    },
+    {
+      "type": "file",
+      "oid": "0fb526131802edd33f26391f1dad63c0f0942a69",
+      "size": 50891197,
+      "lfs": {
+        "oid": "1ba37fae00c27da30ba63a03a2a758dadc8766103088767365726aecc8f2708b",
+        "size": 50891197,
+        "pointerSize": 133
+      },
+      "xetHash": "6186debaa6ba654ae4dc244a90cca8a962b2e6a3ee0f2802c4e1899207ee975d",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_45.csv"
+    },
+    {
+      "type": "file",
+      "oid": "90a9ec140a0aa421cb603a7569c65cdf47e10645",
+      "size": 50893114,
+      "lfs": {
+        "oid": "fa5d4cb7cf840982468ba2163ecd57790bac2f38e1faf6e3aa86aeb36831a946",
+        "size": 50893114,
+        "pointerSize": 133
+      },
+      "xetHash": "adc77f97fcacdfefdf235738327fd4b06b2b04954a189b99bee7d7849c7d6660",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_46.csv"
+    },
+    {
+      "type": "file",
+      "oid": "89aef7e572d7c6fb7aa36fead33bd0b99772e018",
+      "size": 50883810,
+      "lfs": {
+        "oid": "5a2699fdef3d23d1441187c77f36448eab81ac4ecd3d96a685be3ea5db9bd4ea",
+        "size": 50883810,
+        "pointerSize": 133
+      },
+      "xetHash": "91f54e455fc00a4ea214205f330994cb3d45fb4156f0f909392bc41697ab26b0",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_47.csv"
+    },
+    {
+      "type": "file",
+      "oid": "b4d1aaaa0c1dda4b6ca0ee2034b83b57c68209b5",
+      "size": 50894252,
+      "lfs": {
+        "oid": "4e634c45138ab854b63a53033c35700ebbbce202dd0fd6a4f0787873d905b0ac",
+        "size": 50894252,
+        "pointerSize": 133
+      },
+      "xetHash": "a89f170504b1332941e217383219e543734a3f5684ed05b1deaf29e7cc514fa2",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_48.csv"
+    },
+    {
+      "type": "file",
+      "oid": "7ffb649dd0ef47ae40ccad4269e84a91683575a7",
+      "size": 50908694,
+      "lfs": {
+        "oid": "5eacf424774e1cae170dab86f3e7f2c57c206c648b86ad3e100118f07cd79741",
+        "size": 50908694,
+        "pointerSize": 133
+      },
+      "xetHash": "81d24862e50e0c75b3923b31cf2dd6e5a4bf5f428d6d5ab5ca9af7abf44372de",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_49.csv"
+    },
+    {
+      "type": "file",
+      "oid": "c96990f0e1be48e87d439ed4576bdca936c268a8",
+      "size": 50736760,
+      "lfs": {
+        "oid": "7a93bc68d9a454533bc290c41bf73e70451543d12cc52decf944c5c8c7ac233d",
+        "size": 50736760,
+        "pointerSize": 133
+      },
+      "xetHash": "b0f2bb039f89fc37e271a494cddd03492af13c8a9f1ae5d68dc320619df81610",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_5.csv"
+    },
+    {
+      "type": "file",
+      "oid": "acab4be180f0350d7d7c92e3bf434e2991116f2d",
+      "size": 50921801,
+      "lfs": {
+        "oid": "1a05084a5d2c1377c4a5a62eca8c743bff7b5af06d35b3a2265817dd9e50bc4d",
+        "size": 50921801,
+        "pointerSize": 133
+      },
+      "xetHash": "28b69324f735801d19c8ae1f272cc51d57c8c4d832a1e69e52b6df2070371394",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_50.csv"
+    },
+    {
+      "type": "file",
+      "oid": "05d0443f7c89922e78ce590e8a2a968f89a038be",
+      "size": 50825852,
+      "lfs": {
+        "oid": "d9497e86e1840608335fb3e68536e0dae7133fd731122653955958b1b3744916",
+        "size": 50825852,
+        "pointerSize": 133
+      },
+      "xetHash": "f429fea7be281bf6c529967d330bf1813aa147fae2b6e4f395da8b215117a690",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_51.csv"
+    },
+    {
+      "type": "file",
+      "oid": "db06853121d1cf15923dcd6b110b712fa7868c73",
+      "size": 50798473,
+      "lfs": {
+        "oid": "d228692cae6bbfb492c8b403e4fa4137784d06f26d4e9b2458ba2c6fef6e7d64",
+        "size": 50798473,
+        "pointerSize": 133
+      },
+      "xetHash": "35088372d40d725cee7032e97876f7e85ecea9f374d5693da1fd98fde270ec83",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_52.csv"
+    },
+    {
+      "type": "file",
+      "oid": "6605b127f4424e46659ffbaa98dd1e97d6a35240",
+      "size": 50807801,
+      "lfs": {
+        "oid": "078a1b50147b2aa9ddd3dd881d4137d05854ae4b98345d0f9f337a3e2b8bfe14",
+        "size": 50807801,
+        "pointerSize": 133
+      },
+      "xetHash": "ff13bb7cc229eabdf125d7800ca51ba162308003d63facbe49a864ce6a3a8453",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_53.csv"
+    },
+    {
+      "type": "file",
+      "oid": "fbddbd5ee53f18853fcaf2e8f3c6e613d8a2bbd2",
+      "size": 50902631,
+      "lfs": {
+        "oid": "c29144c579387ff04c53ea7f58c28b04119ea49894d381d53640609bb984517a",
+        "size": 50902631,
+        "pointerSize": 133
+      },
+      "xetHash": "35435b321088793341ae0c2389f852c8441c3fe034b58dabfe13a009cf6ef0d3",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_54.csv"
+    },
+    {
+      "type": "file",
+      "oid": "2f9271bcf4fdd6771416fca81eaff1ae76f41f57",
+      "size": 50867009,
+      "lfs": {
+        "oid": "d08846a960965a6373ce3f3ce9086e45df4ceda5521ce25c0a7b6426978e2cbd",
+        "size": 50867009,
+        "pointerSize": 133
+      },
+      "xetHash": "c3ee187630707900c83acbf0373c1663e18d3063ad0fc689eeab561eded760f2",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_55.csv"
+    },
+    {
+      "type": "file",
+      "oid": "e857da4a0355cd9a7df9aeb122173080f128784d",
+      "size": 50854853,
+      "lfs": {
+        "oid": "1171f5fc18c194f436f57c02b36049303bbca1e8a558037cec37388d5942a3a8",
+        "size": 50854853,
+        "pointerSize": 133
+      },
+      "xetHash": "c9174a0f5368119baf41eb389462a13cd789601893ccdcfc8a0add4d11f737ad",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_56.csv"
+    },
+    {
+      "type": "file",
+      "oid": "b08ba6c5f577ed69d3058dfbce2ee5c540dad4e6",
+      "size": 50866045,
+      "lfs": {
+        "oid": "1fdc66fa1966255904e6601ca66a96d4114c29aee8edd4df8d63ceed90ebadc5",
+        "size": 50866045,
+        "pointerSize": 133
+      },
+      "xetHash": "c2ce7aefbcc53aad54bed66adb947afc048283b54cc3352774c8baf198d0577c",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_57.csv"
+    },
+    {
+      "type": "file",
+      "oid": "06e205ccdfabc1d8a2c7d20638e566ac5a93f3ff",
+      "size": 50900600,
+      "lfs": {
+        "oid": "f3e0a5768ff18ae9c72dcdadf3101b8adb2e5cb2a0b65b10a5839ba3116877a4",
+        "size": 50900600,
+        "pointerSize": 133
+      },
+      "xetHash": "e28b7bcdb67826f8ff56d1e2182718cbffbca1df764ebfdff5c817cbf048d6b0",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_58.csv"
+    },
+    {
+      "type": "file",
+      "oid": "4c3ace885886e87183b1b36256b5c2cd0cb441fc",
+      "size": 50824997,
+      "lfs": {
+        "oid": "3138f639822e9a789a28be3b40d9c44494afa4a3c16f0dc40d51939d5d1bdd8c",
+        "size": 50824997,
+        "pointerSize": 133
+      },
+      "xetHash": "616e900cbda0519e221e91992ba7d6b6bed6fd444500f0a551ec73be84e80f15",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_59.csv"
+    },
+    {
+      "type": "file",
+      "oid": "4ff3df029cb08184fd92da685b483f24ac6b5e6a",
+      "size": 50905358,
+      "lfs": {
+        "oid": "88f1fd5489a4727418c889c7d33bb2f6c6f28548a5ab8d91377f869bc8174c32",
+        "size": 50905358,
+        "pointerSize": 133
+      },
+      "xetHash": "3427eef92cbe0b26b2a2d73c85fbfb192b7251d50dba1f13286800fc2e70350d",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_6.csv"
+    },
+    {
+      "type": "file",
+      "oid": "964834c71c966c3273a35d9acedb942430740bd8",
+      "size": 50893848,
+      "lfs": {
+        "oid": "f30ef6dea76ff0df1f13665747647eb2321616458e288e80c7a56213a99cb494",
+        "size": 50893848,
+        "pointerSize": 133
+      },
+      "xetHash": "cb61aa4fc6a5a69e683eca50a28b5eaf87fb3e7cf71cb5c8b2a2bf5b7de43a7f",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_60.csv"
+    },
+    {
+      "type": "file",
+      "oid": "eb71ecab2f19148de8a9d51d2a9fab92b3eb1bcc",
+      "size": 50856595,
+      "lfs": {
+        "oid": "e2080971712ce5f09015d48f826b6631926cdf0d54769557bfdb73cae93dd14b",
+        "size": 50856595,
+        "pointerSize": 133
+      },
+      "xetHash": "196febc207545137ec3418dd68a24043cdbcd8130b287713134a150d5143a7f1",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_61.csv"
+    },
+    {
+      "type": "file",
+      "oid": "32023b2f16b7f9bcca5e34a092097de5b227e444",
+      "size": 50891548,
+      "lfs": {
+        "oid": "72b1c2bcc5fffec889c5e748b37050ce43d1d036abd8db705ca8c3f12e4daa5b",
+        "size": 50891548,
+        "pointerSize": 133
+      },
+      "xetHash": "35817bbb345b8b0f865c2e3c93321e2b6f6638587c6e4c7c780570ee5ebee03e",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_62.csv"
+    },
+    {
+      "type": "file",
+      "oid": "fbfc5598b5c9e3fcc45333f61bc47bb1206840e4",
+      "size": 50811924,
+      "lfs": {
+        "oid": "05d007a50d094f5da4bc21085cb9392470c0503f689ecfd37be8d9b875f40897",
+        "size": 50811924,
+        "pointerSize": 133
+      },
+      "xetHash": "01e56e221e9af5babaec2edfdfda60fcae09dbc6c92d67c79a5112db086f546e",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_63.csv"
+    },
+    {
+      "type": "file",
+      "oid": "2488cb695fafddd400472a7859ecbdbbc2db3516",
+      "size": 50740790,
+      "lfs": {
+        "oid": "eefcc8df05800fa0372f9fb1f8760a7fadb96592fe1f92e50cb5ed9b6014d247",
+        "size": 50740790,
+        "pointerSize": 133
+      },
+      "xetHash": "a4d602b651eb4aabb9e537184be6091e66a91b488a63bde85036300d3bab60b5",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_64.csv"
+    },
+    {
+      "type": "file",
+      "oid": "283979370cc66aa4cf0854ff8b57b2830ef01a0c",
+      "size": 50894800,
+      "lfs": {
+        "oid": "10d92b4ef83bcc2727ffecb72ffba87cc3fcfbdc348a854cb708b2e41ce8f072",
+        "size": 50894800,
+        "pointerSize": 133
+      },
+      "xetHash": "cbcdd89744d1cc821e13eb8a590aa7dc532371150770984ccbe4c9e7f3ec7b60",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_65.csv"
+    },
+    {
+      "type": "file",
+      "oid": "9eba4072dd4101b7e999cd3be124319793be005c",
+      "size": 50885963,
+      "lfs": {
+        "oid": "7d7ae6312d99fea23a8336dcbf79d25b557594490b842ae313276c9f12e835f6",
+        "size": 50885963,
+        "pointerSize": 133
+      },
+      "xetHash": "df5d761fc43bf553a1998967464037344416b86ad611f460b946620ed2484e15",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_66.csv"
+    },
+    {
+      "type": "file",
+      "oid": "157ece84d94c2d2e3bcc197b38e1419594a37b68",
+      "size": 50862466,
+      "lfs": {
+        "oid": "a03b9e4a297678028fc8ca909f9c39ff0f7be80cd1736b4bf53b78ea70baab61",
+        "size": 50862466,
+        "pointerSize": 133
+      },
+      "xetHash": "26a1474029411090827bff03987402dd15a82e4c435a25f7569e4ac1414b3865",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_67.csv"
+    },
+    {
+      "type": "file",
+      "oid": "a32034d1fbabf8e8935a45ace9be95287d0d4e4d",
+      "size": 50861885,
+      "lfs": {
+        "oid": "bc43837234838eea84b78984dca0e3bd4e35fdd63298be027644d71557b93921",
+        "size": 50861885,
+        "pointerSize": 133
+      },
+      "xetHash": "b792e5c408af38649ad83b3a96d0af6577612afb68bde49d13f49b06de54bccc",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_68.csv"
+    },
+    {
+      "type": "file",
+      "oid": "9974863dbe22f2e79afcef9766f0f8c9ed5dc8d8",
+      "size": 50890228,
+      "lfs": {
+        "oid": "dd084d9efe769bea4f9e86c5dfcd2b9540fd02cecf862c6be4a1e082111c5d35",
+        "size": 50890228,
+        "pointerSize": 133
+      },
+      "xetHash": "2100fa39cf11045a7214888911f82565a245c8ae7a121537270fee6f23719959",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_69.csv"
+    },
+    {
+      "type": "file",
+      "oid": "03a607e876a103221259d70a153580fb0bfa36d3",
+      "size": 50873085,
+      "lfs": {
+        "oid": "0462cc80c7e2f52c4922ab157a9ae7d1274dab23a7ca001cd1e1118e5e6c36a4",
+        "size": 50873085,
+        "pointerSize": 133
+      },
+      "xetHash": "c8eb0a8b569f52c914293fd18f1b8f8bf7015f9897eb70b1bc82210c87b3447f",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_7.csv"
+    },
+    {
+      "type": "file",
+      "oid": "5bc25aef305aeff46efae1eda8f32bbc1baaa597",
+      "size": 50733216,
+      "lfs": {
+        "oid": "700dcec7790b260d1dec20860b2fdda73068e933bbd5daeba5b60f06b5b81318",
+        "size": 50733216,
+        "pointerSize": 133
+      },
+      "xetHash": "81353ebcd4239f5360ece7c0a13df73619bfa54c73872ff4bc3c3d954fb6c8a2",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_70.csv"
+    },
+    {
+      "type": "file",
+      "oid": "a63e7d81bdc5aaf32c5791a1ca9852f3011f55e6",
+      "size": 50848207,
+      "lfs": {
+        "oid": "0536576273ff6c0eebe6d205bdf7d1becd549752b041ca640ba8b5be3b934ebd",
+        "size": 50848207,
+        "pointerSize": 133
+      },
+      "xetHash": "f99c7d4defa70d59b9dc0a62cff67ea734e441420924e373635043d187640ff6",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_71.csv"
+    },
+    {
+      "type": "file",
+      "oid": "7aa52995e3a70becacdfc290f1c61ad7bf18ab56",
+      "size": 50897513,
+      "lfs": {
+        "oid": "5c0f1be59afa9e57d2f23862d961bf5ca49674bda7efd17e1f3736b77495a959",
+        "size": 50897513,
+        "pointerSize": 133
+      },
+      "xetHash": "6b8e490492f6be1ecef5aab2a814cc84bfedff2a6b0eba92236062fe832c8c50",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_72.csv"
+    },
+    {
+      "type": "file",
+      "oid": "0fe0b5c8c0eabab8bf05e82f11f5afc0da96fa8e",
+      "size": 50866221,
+      "lfs": {
+        "oid": "cd83bf7b0c52aab03624048d2bada9507ff1111fb5e5b224a8fa4d3f0dff3475",
+        "size": 50866221,
+        "pointerSize": 133
+      },
+      "xetHash": "6b7f40228fe0a7158a437e66b8d703c2c0a2bdc271ce0f46ecd91c7653c37b9e",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_73.csv"
+    },
+    {
+      "type": "file",
+      "oid": "621072854aeee3554447828fe386891a790c015c",
+      "size": 50841974,
+      "lfs": {
+        "oid": "68fbd04f80e3ecef4a18dccbb40b0ba14367315b461f3aa9192a5e6028bb6331",
+        "size": 50841974,
+        "pointerSize": 133
+      },
+      "xetHash": "e4cea4a8b18fc1f4d3ecf595dbfe17013452f359cb3f5236b00ec51425822bc2",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_74.csv"
+    },
+    {
+      "type": "file",
+      "oid": "a5f722167c484ee5bf80ff3cde7af94ce163cea3",
+      "size": 50889822,
+      "lfs": {
+        "oid": "b9518c7ebffef3cca5d93a5e6261178d2aee2d087579f2edcfd3cbb8e4b3cc61",
+        "size": 50889822,
+        "pointerSize": 133
+      },
+      "xetHash": "47ef91559b615bf815a9d95b830f109e2a38df238becf6a66686363cb65c469a",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_75.csv"
+    },
+    {
+      "type": "file",
+      "oid": "e3fe9ec248d3f3532a734dc4e031a98bf9c42e4a",
+      "size": 50890387,
+      "lfs": {
+        "oid": "f34a425c830406ee07bfa3913bb2898f2178106234c98fba5d8f8342819373c6",
+        "size": 50890387,
+        "pointerSize": 133
+      },
+      "xetHash": "4cd4e8223c252d17ef224d9497a748297a0f119e471acf47088343f7708dfff7",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_76.csv"
+    },
+    {
+      "type": "file",
+      "oid": "c2b1a4bcfba96a9c8fe484439004f1aa537a18ae",
+      "size": 50888362,
+      "lfs": {
+        "oid": "02096112cb8baf37f9272f45c0860f8d5a03b1d870811c79f215e4be2a001897",
+        "size": 50888362,
+        "pointerSize": 133
+      },
+      "xetHash": "12dfa879189b0b86a4df58121b6663bc0e5410bfad7c93644b9a0bfafecb67ed",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_77.csv"
+    },
+    {
+      "type": "file",
+      "oid": "ae4b229bf3f4ff53a8f552a8bc814e8607aa1bf9",
+      "size": 50901844,
+      "lfs": {
+        "oid": "11db1f0eee9a0eda2cbc8b723eb52dce0213d3cdbdc5a96f828c6c51ddc99a40",
+        "size": 50901844,
+        "pointerSize": 133
+      },
+      "xetHash": "b5f825657b1fa1e996e8badb1c8230ccf9ec13f7aa188874ed40bc8bbb317090",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_78.csv"
+    },
+    {
+      "type": "file",
+      "oid": "d6cf68ecc0fa6749a9a307919fb48dba72a6f17c",
+      "size": 50901887,
+      "lfs": {
+        "oid": "f828ad4e03687a3c94d60b2fcca611ad722bff04e561a923a244101af8863e42",
+        "size": 50901887,
+        "pointerSize": 133
+      },
+      "xetHash": "a2df99d3f929c58e60bd02f0922c3f913dcd0045f1234cbf4dfb66e54859f519",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_79.csv"
+    },
+    {
+      "type": "file",
+      "oid": "403e0e327c65bfd35f52be62949cc8838409c3c5",
+      "size": 50856226,
+      "lfs": {
+        "oid": "da7551ac8a2daae9e1601e93ebffad7b424812c28d081f2e0baf5692d093e85b",
+        "size": 50856226,
+        "pointerSize": 133
+      },
+      "xetHash": "3e7dd94c6eae55d78d5c5098663320b7c1e92e98a5e10af431f94c789c57a87b",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_8.csv"
+    },
+    {
+      "type": "file",
+      "oid": "1e7fe7e52e40debf208eb012659e3168428a2e82",
+      "size": 50858603,
+      "lfs": {
+        "oid": "0fcdfe70a778ab63d433b124c99de6f4874e490b2badcef0c5ab456015ef7a79",
+        "size": 50858603,
+        "pointerSize": 133
+      },
+      "xetHash": "774680fdd7fdebf02ec85c3917c475dabd5104a473fe36ec9266b1fcf7c169c0",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_80.csv"
+    },
+    {
+      "type": "file",
+      "oid": "5b036559c1c74a34b4877926ef97c0e312c3b1d6",
+      "size": 50913682,
+      "lfs": {
+        "oid": "78bb72e3e70a6aa15fd755b6d05e8283da80f4b3ee543d025b3749221e1f4fe3",
+        "size": 50913682,
+        "pointerSize": 133
+      },
+      "xetHash": "c240cb23039b82b40f1a564d1f90a5adf1be66a5f026945cfc98f22374fc0035",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_81.csv"
+    },
+    {
+      "type": "file",
+      "oid": "b6328c23486cf98c2683ada677a1c1d54db14613",
+      "size": 50910400,
+      "lfs": {
+        "oid": "a73809b69b8f5f54627569d86f829a218a1b54102430a9c63be894e981246cdd",
+        "size": 50910400,
+        "pointerSize": 133
+      },
+      "xetHash": "b15fb77efedb11cd4b72f6b87f2b0a7929ad90cf27662392f982fb2d85de947e",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_82.csv"
+    },
+    {
+      "type": "file",
+      "oid": "f0724699cf09869ab83aa15e48405f73e9e365f8",
+      "size": 50889132,
+      "lfs": {
+        "oid": "5f548a91fd3dd379a11674c26813f0d42bae53a5179a93ab26d4aa4ce3fe6a9c",
+        "size": 50889132,
+        "pointerSize": 133
+      },
+      "xetHash": "99d06a34c70931a9d8d668bc81bc69c640f406b179f9b16f56eed8dbd11e6064",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_83.csv"
+    },
+    {
+      "type": "file",
+      "oid": "54735e63809c9ab2f2931a293f44fd7cd97dba4b",
+      "size": 50860776,
+      "lfs": {
+        "oid": "14730e141e810a7da0e31dbd07391ef9503f5d5533d49d5262b0599cf9947576",
+        "size": 50860776,
+        "pointerSize": 133
+      },
+      "xetHash": "d4e515df72482c46f28b9d0c14c36a50f4c6016bee7887de79be924530083012",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_84.csv"
+    },
+    {
+      "type": "file",
+      "oid": "707a2b8af5c00739f52b8751154b0915395bea6a",
+      "size": 50917212,
+      "lfs": {
+        "oid": "940696fa3e9c646442f47581ddb7e9f73d7bc5706588fcfe6601e9eadb36a244",
+        "size": 50917212,
+        "pointerSize": 133
+      },
+      "xetHash": "901cc524040ea58007b1dac2c1acaf5d46e894df3407cdc0921aa32ee465d542",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_85.csv"
+    },
+    {
+      "type": "file",
+      "oid": "be842cbcefe5f402222fa3a0b96752fba97ff629",
+      "size": 50807075,
+      "lfs": {
+        "oid": "b3b0ebd933a02becbe6bdcfb85bf348cd7076849bd1e0f68b288d3a783cb5241",
+        "size": 50807075,
+        "pointerSize": 133
+      },
+      "xetHash": "17784fa91c989e844e4b3be5bda516212610064494290e870cd06816e3853700",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_86.csv"
+    },
+    {
+      "type": "file",
+      "oid": "12daf281891569cafc9c4f311d3260cfd5958c65",
+      "size": 50895508,
+      "lfs": {
+        "oid": "152b107b3904bcc849ad99b19cdf6122e29969059575fabba297458b3b4b4b2b",
+        "size": 50895508,
+        "pointerSize": 133
+      },
+      "xetHash": "9b530435f3528b9ab218d8a53764c724144178b4a121d0aeb98ced4b716ea525",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_87.csv"
+    },
+    {
+      "type": "file",
+      "oid": "eb40cd51054154086bc1201d25da60a37e3f5168",
+      "size": 50931020,
+      "lfs": {
+        "oid": "6f3c1c35a5b15e51e2fc077670f80d3a6a348c85a149e221f11ec30946a1a87e",
+        "size": 50931020,
+        "pointerSize": 133
+      },
+      "xetHash": "e5eb5936c1fd3b876b370a8ec741c8129d93d861dfe6ddd64c35e139801c9a63",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_88.csv"
+    },
+    {
+      "type": "file",
+      "oid": "8fc0813e5dcd4bae1c838b0a75683dfc159dc6ef",
+      "size": 50874421,
+      "lfs": {
+        "oid": "0b74f566b75fa126e3547f24d6f87bd2c23fc252fd9f93fecfcaf9a38772934e",
+        "size": 50874421,
+        "pointerSize": 133
+      },
+      "xetHash": "7af369b72f4540d4c3d575b459cde155ad56b0aac1abb08d508b0b345fca781d",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_89.csv"
+    },
+    {
+      "type": "file",
+      "oid": "b33a368768cddd11e5707a61051645e01c092fd9",
+      "size": 50860642,
+      "lfs": {
+        "oid": "33668e96bd1af5b37a09e8fb6e54beebe7f6bb537d2c73d730d11b40a90af5b9",
+        "size": 50860642,
+        "pointerSize": 133
+      },
+      "xetHash": "d7b7df2fb6bbab5d6aa8e632978193db40f6f7aad90961f8daae1bee559d74d2",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_9.csv"
+    },
+    {
+      "type": "file",
+      "oid": "71f267b4bf565459ad61c5be42dbed5022c85df3",
+      "size": 50914846,
+      "lfs": {
+        "oid": "5ef28bbd84399470c897159f785e64ce0ec49af08ce0d751525bd735d2a3e673",
+        "size": 50914846,
+        "pointerSize": 133
+      },
+      "xetHash": "eeea13a20ef520219509e003696def538b2b046f09b58b6c9cf7bb7d6b5468d1",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_90.csv"
+    },
+    {
+      "type": "file",
+      "oid": "c5dd97d96d34000149d39bef29826696859f7dd0",
+      "size": 50899311,
+      "lfs": {
+        "oid": "8540d724f5ab5f21a13456119639475d3d7a7f8a1e7f6a2a274b38707989ef67",
+        "size": 50899311,
+        "pointerSize": 133
+      },
+      "xetHash": "1412b42d31fb6c77744af5480fc363ad0c96d03e65e76516e21c395267d6ae7d",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_91.csv"
+    },
+    {
+      "type": "file",
+      "oid": "e6325ce31827ea6eeaa94b07ce0158e426cf8d24",
+      "size": 50891493,
+      "lfs": {
+        "oid": "9dd21aeef7aa9bd8688c0c182f7221e6741e0c91a6561c40741afba3a949735b",
+        "size": 50891493,
+        "pointerSize": 133
+      },
+      "xetHash": "ffe7a80f8826831c562857c00c312daedf94ce0f445f0998b72690688c2f0af0",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_92.csv"
+    },
+    {
+      "type": "file",
+      "oid": "c85dd4649b2508289aaedb6db252873675828d49",
+      "size": 50924525,
+      "lfs": {
+        "oid": "89f984509bbbd79e76ceb338afddc0b6c81b02fa759402626f48a0f8b5d86192",
+        "size": 50924525,
+        "pointerSize": 133
+      },
+      "xetHash": "60365affb34c97bc1bb3dd552c806093969482c78333739bdd7d510fde2e10bf",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_93.csv"
+    },
+    {
+      "type": "file",
+      "oid": "0cc705d6c7f4bd1829845186a5f982fac8c65618",
+      "size": 50761193,
+      "lfs": {
+        "oid": "41cb2997af09dbe265d6acb2391e43b597546524f81217640ac443ebb170d921",
+        "size": 50761193,
+        "pointerSize": 133
+      },
+      "xetHash": "03dcb7b751edc0cafb630ce0cee90bff320e73787fc64b83cb8f2e95ace76e5b",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_94.csv"
+    },
+    {
+      "type": "file",
+      "oid": "6cfcaa2885516afc356ad16f89687f4edaf1245c",
+      "size": 50871293,
+      "lfs": {
+        "oid": "f7fc2708ba950515e576a81e701582d6b495f9690ef49a7f5b9998608d3db25c",
+        "size": 50871293,
+        "pointerSize": 133
+      },
+      "xetHash": "fc54f6a7fe3320ec98a9d42f3fa42799fc28b06e1151cf27dd75f847a79330d1",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_95.csv"
+    },
+    {
+      "type": "file",
+      "oid": "df307ec6977099513fd3991c50efae20bb546934",
+      "size": 50901416,
+      "lfs": {
+        "oid": "d5be14c0c3d9233601a9f225ef22110860eb42727619cc0521c855f72b041eed",
+        "size": 50901416,
+        "pointerSize": 133
+      },
+      "xetHash": "be73e35f0c34bb228ece7449126d4959cae5ad7f716ef1ab5ca5ae51fc43034f",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_96.csv"
+    },
+    {
+      "type": "file",
+      "oid": "6eba997fb3dca7305d8d78924255593f3652fdfc",
+      "size": 50913466,
+      "lfs": {
+        "oid": "c82d0ae19935db798f04828ee0070d3969eb218291f51da0f3c4068b514dc6c1",
+        "size": 50913466,
+        "pointerSize": 133
+      },
+      "xetHash": "0806a64a4399d32466b9a2fa0f3a4fb4516b2d7d6fe85e48a2e19b7b8fb5ab6c",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_97.csv"
+    },
+    {
+      "type": "file",
+      "oid": "65b91a8c4d0922633164f87d3725b157014c8aa3",
+      "size": 50913652,
+      "lfs": {
+        "oid": "ae8e73c65dfeac70fb77e2bfcbf252f0d9d07229e9b21db0092192c0b08cf074",
+        "size": 50913652,
+        "pointerSize": 133
+      },
+      "xetHash": "54ecb3c20e0bfa5d233d64795d8f499bece22b8a6b3bc507c968b2de9a8021d4",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_98.csv"
+    },
+    {
+      "type": "file",
+      "oid": "7d7ceb4c44593171b538d46d5f06246df62f8911",
+      "size": 50897698,
+      "lfs": {
+        "oid": "d2cf082376150d8942989c5babf935882b25be0b5ec28179afe6f32c94f8b302",
+        "size": 50897698,
+        "pointerSize": 133
+      },
+      "xetHash": "b178282ae6f743935642d7dd3dddc30a0fcd790b9aa9e1b3c231829c0f0ab757",
+      "path": "Partitioned LCL Data/Small LCL Data/LCL-June2015v2_99.csv"
+    }
+  ]
+}

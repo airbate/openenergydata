@@ -1,0 +1,29 @@
+{
+  "clean": {
+    "manifest.schema": "pass",
+    "units.declaration": "pass",
+    "dataset.references": "pass",
+    "dataset.integrity": "pass",
+    "dataset.contents": "pass",
+    "dataset.coverage": "unknown",
+    "units.measurement_truth": "unknown"
+  },
+  "changed": {
+    "manifest.schema": "pass",
+    "units.declaration": "pass",
+    "dataset.references": "pass",
+    "dataset.integrity": "fail",
+    "dataset.contents": "fail",
+    "dataset.coverage": "unknown",
+    "units.measurement_truth": "unknown"
+  },
+  "rehashed": {
+    "manifest.schema": "pass",
+    "units.declaration": "pass",
+    "dataset.references": "pass",
+    "dataset.integrity": "pass",
+    "dataset.contents": "fail",
+    "dataset.coverage": "unknown",
+    "units.measurement_truth": "unknown"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "author_commit": "9192b8874f5bdf1eed3c99a6deba3896bd2ae090",
+  "method": "Timestamp/value audit using the separately reconstructed household mapping",
+  "scope": "Compares matching clock labels only; UTC tagging is a join convention, not source timezone validation; original null values excluded",
+  "float32_absolute_tolerance": 5e-08,
+  "normalization": {
+    "method": "global MinMaxScaler",
+    "min": 0.0,
+    "max": 9.71
+  },
+  "households": 5552,
+  "aligned": 0,
+  "totals": {
+    "raw_unique_timestamps": 60368493,
+    "imported_rows": 60127023,
+    "timestamps_matched": 59897703,
+    "raw_only": 470790,
+    "imported_only": 229320,
+    "values_checked": 59893917,
+    "values_matched": 785232,
+    "value_mismatches": 59108685,
+    "original_nulls": 3786
+  },
+  "raw_source_manifest_sha256": "02651b53664cd520742efbab405b6f7c4ee02a352ceb24ab0e065035298e4aa5",
+  "imported_manifest_sha256": "0f61ffa2a6115cccc14d1bc303b694003f8f634fee8b6dbba45e46dd3c0ae911",
+  "alignment_sha256": "77d7581c1d63c4a943d59a8b4b60ae0559a4589af7e02c22c8b2d34f560d4b1e",
+  "input_mapping_sha256": "dba3b332cdf7208771f776a8e428bdde6862c58a5f99435c400298bef3d6f9c1"
+}

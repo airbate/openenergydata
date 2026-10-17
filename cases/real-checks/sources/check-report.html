@@ -1,0 +1,70 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>能源数据可信性检查</title><style>body{max-width:1000px;margin:40px auto;padding:0 24px;font:16px/1.7 system-ui;background:#f5f7fa;color:#17243a}article{background:white;padding:20px;margin:18px 0;border-radius:12px}pre{white-space:pre-wrap;overflow-wrap:anywhere}h1{font-size:30px}</style><h1>能源数据可信性检查</h1><p>状态：fail</p><p>Feather V2 文件可解码性、参考哈希比对、LCL 户号表示与清单单位一致性；不认证完整性或适合建模。</p><article><h2>source.checksum · pass</h2><p>data_seed/df_2011.feather</p><p>哈希匹配仅证明与提供的参考版本一致，不证明上游文件完整或内容正确。</p><p>缺少参考哈希时向发布方获取；不匹配时隔离并核对版本。</p><details><summary>查看证据</summary><pre>{
+  &quot;sha256&quot;: &quot;4ccfb7f043d69c2e1df2cdfaea1bf784c0d14298accd8ef64035ca2d7df25c3b&quot;,
+  &quot;expected_sha256&quot;: &quot;4ccfb7f043d69c2e1df2cdfaea1bf784c0d14298accd8ef64035ca2d7df25c3b&quot;,
+  &quot;bytes&quot;: 19581186
+}</pre></details></article><article><h2>source.structure · pass</h2><p>data_seed/df_2011.feather</p><p>全部 IPC 批次可解码；尚不证明所有预期时间和家庭都在文件中。</p><p>继续检查发布方覆盖范围及身份映射。</p><details><summary>查看证据</summary><pre>{
+  &quot;decoded_rows&quot;: 399737,
+  &quot;decoded_batches&quot;: 7
+}</pre></details></article><article><h2>source.checksum · pass</h2><p>/Volumes/Ventoy/data_lcl/df_2012.feather</p><p>哈希匹配仅证明与提供的参考版本一致，不证明上游文件完整或内容正确。</p><p>缺少参考哈希时向发布方获取；不匹配时隔离并核对版本。</p><details><summary>查看证据</summary><pre>{
+  &quot;sha256&quot;: &quot;963471299039408ed6742e96cf9d64f3cd1b114bf3dc448b56f8f52f6dcc2ce5&quot;,
+  &quot;expected_sha256&quot;: &quot;963471299039408ed6742e96cf9d64f3cd1b114bf3dc448b56f8f52f6dcc2ce5&quot;,
+  &quot;bytes&quot;: 2889925738
+}</pre></details></article><article><h2>source.structure · pass</h2><p>/Volumes/Ventoy/data_lcl/df_2012.feather</p><p>全部 IPC 批次可解码；尚不证明所有预期时间和家庭都在文件中。</p><p>继续检查发布方覆盖范围及身份映射。</p><details><summary>查看证据</summary><pre>{
+  &quot;decoded_rows&quot;: 60393414,
+  &quot;decoded_batches&quot;: 922
+}</pre></details></article><article><h2>source.checksum · pass</h2><p>/Volumes/Ventoy/data_lcl/df_2013.feather</p><p>哈希匹配仅证明与提供的参考版本一致，不证明上游文件完整或内容正确。</p><p>缺少参考哈希时向发布方获取；不匹配时隔离并核对版本。</p><details><summary>查看证据</summary><pre>{
+  &quot;sha256&quot;: &quot;fc38a590d5bfc6472959657155d6d4562ce4902186f685d09d547cb83eef262d&quot;,
+  &quot;expected_sha256&quot;: &quot;fc38a590d5bfc6472959657155d6d4562ce4902186f685d09d547cb83eef262d&quot;,
+  &quot;bytes&quot;: 1219620962
+}</pre></details></article><article><h2>source.structure · fail</h2><p>/Volumes/Ventoy/data_lcl/df_2013.feather</p><p>文件不能作为完整 Feather 数据输入；可能存在截断或格式损坏。</p><p>保留原文件，核对参考哈希；如恢复完整批次，单独标记为部分恢复，不能补造缺失记录。</p><details><summary>查看证据</summary><pre>{
+  &quot;error&quot;: &quot;Not an Arrow file&quot;,
+  &quot;decoded_rows&quot;: 0,
+  &quot;decoded_batches&quot;: 0
+}</pre></details></article><article><h2>source.checksum · pass</h2><p>/Volumes/Ventoy/data_lcl/df_2014.feather</p><p>哈希匹配仅证明与提供的参考版本一致，不证明上游文件完整或内容正确。</p><p>缺少参考哈希时向发布方获取；不匹配时隔离并核对版本。</p><details><summary>查看证据</summary><pre>{
+  &quot;sha256&quot;: &quot;a60a8203ee5d6dca57c04d66b94bcd1d8be5fddb32e21de830f061ca5bcca08d&quot;,
+  &quot;expected_sha256&quot;: &quot;a60a8203ee5d6dca57c04d66b94bcd1d8be5fddb32e21de830f061ca5bcca08d&quot;,
+  &quot;bytes&quot;: 688550394
+}</pre></details></article><article><h2>source.structure · pass</h2><p>/Volumes/Ventoy/data_lcl/df_2014.feather</p><p>全部 IPC 批次可解码；尚不证明所有预期时间和家庭都在文件中。</p><p>继续检查发布方覆盖范围及身份映射。</p><details><summary>查看证据</summary><pre>{
+  &quot;decoded_rows&quot;: 14034834,
+  &quot;decoded_batches&quot;: 215
+}</pre></details></article><article><h2>identity.cross_file · fail</h2><p>输入文件的户号关联</p><p>户号表示不同，未经映射的跨文件关联不受支持。</p><p>取得包含版本与来源的映射表；此前按文件/年份命名空间隔离，不按序号猜测 MAC 户号。</p><details><summary>查看证据</summary><pre>{
+  &quot;schemas&quot;: [
+    {
+      &quot;file&quot;: &quot;data_seed/df_2011.feather&quot;,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;family&quot;: &quot;text&quot;,
+      &quot;sample&quot;: [
+        &quot;MAC000016&quot;,
+        &quot;MAC000016&quot;,
+        &quot;MAC000016&quot;,
+        &quot;MAC000016&quot;,
+        &quot;MAC000016&quot;
+      ]
+    },
+    {
+      &quot;file&quot;: &quot;/Volumes/Ventoy/data_lcl/df_2012.feather&quot;,
+      &quot;type&quot;: &quot;int64&quot;,
+      &quot;family&quot;: &quot;numeric&quot;,
+      &quot;sample&quot;: [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      &quot;file&quot;: &quot;/Volumes/Ventoy/data_lcl/df_2014.feather&quot;,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;family&quot;: &quot;text&quot;,
+      &quot;sample&quot;: [
+        &quot;MAC000002&quot;,
+        &quot;MAC000002&quot;,
+        &quot;MAC000002&quot;,
+        &quot;MAC000002&quot;,
+        &quot;MAC000002&quot;
+      ]
+    }
+  ],
+  &quot;mapping_provided&quot;: false
+}</pre></details></article></html>

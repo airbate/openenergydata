@@ -1,0 +1,79 @@
+{
+  "@context": "https://raw.githubusercontent.com/mlcommons/croissant/main/croissant-rdf/croissant.jsonld",
+  "@type": "cr:Dataset",
+  "name": "synthetic-content-check",
+  "description": "Synthetic, not a real LCL defect",
+  "url": "https://example.org/synthetic",
+  "license": "CC0-1.0",
+  "creator": "unknown",
+  "keywords": [
+    "energy",
+    "oed"
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "name": "sites/demo/energy.parquet",
+      "contentUrl": "sites/demo/energy.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "0ea4b4a6a43ea7b705046743bf7dfc784af370c4811cec58da3ecaaa583cd6bd"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "name": "demo/energy",
+      "description": "power time series",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "name": "timestamp",
+          "dataType": "sc:DateTime",
+          "description": "UTC ISO-8601"
+        },
+        {
+          "@type": "cr:Field",
+          "name": "power_w",
+          "dataType": "sc:Float",
+          "description": "kWh"
+        },
+        {
+          "@type": "cr:Field",
+          "name": "quality",
+          "dataType": "sc:Integer",
+          "description": "bitmask, see oed quality vocabulary"
+        }
+      ]
+    }
+  ],
+  "x-oed": {
+    "spec": "oed/1.0",
+    "source": {
+      "dataset": "synthetic",
+      "url": "https://example.org/synthetic",
+      "license": "CC0-1.0",
+      "citation": "reproduce_content_checks.py"
+    },
+    "converter": {
+      "name": "oed.converters.synthetic",
+      "version": "0.1.0"
+    },
+    "sites": [
+      {
+        "id": "demo",
+        "timezone": "UTC",
+        "channels": [
+          {
+            "id": "energy",
+            "path": "sites/demo/energy.parquet",
+            "role": "site_meter",
+            "physical_quantity": "energy",
+            "ac_type": "active",
+            "unit": "kWh",
+            "nominal_interval_s": 1800
+          }
+        ]
+      }
+    ]
+  }
+}

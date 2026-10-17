@@ -1,0 +1,459 @@
+{
+  "method": "Search all raw households for sampled 16-reading sequences after reversing global MinMax (0,9.71); no sorted-ID assumption",
+  "verification_rule": "One candidate household across all matching blocks, >=3 distinct sampled offsets, >=6 distinct readings per block; hash hits confirmed by exact quantized arrays",
+  "limits": "Sampled energy identity verification, not all-row equivalence; timestamps NOT validated; nulls and imputation not repaired",
+  "quantization_kwh": 1e-06,
+  "sample_stride": 512,
+  "block_width": 16,
+  "source_feather_sha256": "963471299039408ed6742e96cf9d64f3cd1b114bf3dc448b56f8f52f6dcc2ce5",
+  "official_archive_sha256": "149a6a9c43c622fd0a14b7d11be055665317d3018d9fb7e1043bd51420bfaea5",
+  "mapping_sha256": "0a2f04b40c9b1744f68f2856986677a71968b05a5a2c61c81c5c0e01f699b029",
+  "source_rows": 60393414,
+  "households": 5552,
+  "verified": 5524,
+  "unresolved": [
+    {
+      "encoded_id": 35,
+      "original_id": "",
+      "source_rows": 17576,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 146,
+      "original_id": "MAC000148",
+      "source_rows": 17575,
+      "raw_rows": 17578,
+      "matched_blocks": 1,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 195,
+      "original_id": "",
+      "source_rows": 17561,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 1148,
+      "original_id": "",
+      "source_rows": 1,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 1276,
+      "original_id": "MAC001278",
+      "source_rows": 507,
+      "raw_rows": 507,
+      "matched_blocks": 1,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 1298,
+      "original_id": "MAC001300",
+      "source_rows": 361,
+      "raw_rows": 361,
+      "matched_blocks": 1,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 1307,
+      "original_id": "",
+      "source_rows": 11076,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 1952,
+      "original_id": "MAC001957",
+      "source_rows": 605,
+      "raw_rows": 605,
+      "matched_blocks": 2,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 2105,
+      "original_id": "",
+      "source_rows": 479,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 2219,
+      "original_id": "MAC002224",
+      "source_rows": 8849,
+      "raw_rows": 8852,
+      "matched_blocks": 1,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 2382,
+      "original_id": "",
+      "source_rows": 11744,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 2588,
+      "original_id": "",
+      "source_rows": 8383,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 2737,
+      "original_id": "MAC002744",
+      "source_rows": 11409,
+      "raw_rows": 11412,
+      "matched_blocks": 1,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 3147,
+      "original_id": "",
+      "source_rows": 8186,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 3316,
+      "original_id": "MAC003325",
+      "source_rows": 814,
+      "raw_rows": 817,
+      "matched_blocks": 2,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 3339,
+      "original_id": "MAC003348",
+      "source_rows": 1006,
+      "raw_rows": 1009,
+      "matched_blocks": 2,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 3484,
+      "original_id": "MAC003493",
+      "source_rows": 814,
+      "raw_rows": 817,
+      "matched_blocks": 2,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 3589,
+      "original_id": "MAC003599",
+      "source_rows": 1006,
+      "raw_rows": 1009,
+      "matched_blocks": 2,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 3943,
+      "original_id": "MAC003953",
+      "source_rows": 8571,
+      "raw_rows": 8574,
+      "matched_blocks": 2,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 4057,
+      "original_id": "",
+      "source_rows": 10880,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 4660,
+      "original_id": "",
+      "source_rows": 8281,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 4723,
+      "original_id": "MAC004735",
+      "source_rows": 13041,
+      "raw_rows": 13044,
+      "matched_blocks": 2,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 5306,
+      "original_id": "MAC005319",
+      "source_rows": 15338,
+      "raw_rows": 15341,
+      "matched_blocks": 1,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 5542,
+      "original_id": "",
+      "source_rows": 1,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 5544,
+      "original_id": "MAC005558",
+      "source_rows": 26,
+      "raw_rows": 29,
+      "matched_blocks": 1,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 5547,
+      "original_id": "",
+      "source_rows": 1,
+      "raw_rows": null,
+      "matched_blocks": 0,
+      "candidate_count": 0,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 5549,
+      "original_id": "MAC005565",
+      "source_rows": 45,
+      "raw_rows": 45,
+      "matched_blocks": 1,
+      "candidate_count": 1,
+      "status": "unresolved"
+    },
+    {
+      "encoded_id": 5551,
+      "original_id": "MAC005567",
+      "source_rows": 579,
+      "raw_rows": 582,
+      "matched_blocks": 2,
+      "candidate_count": 1,
+      "status": "unresolved"
+    }
+  ],
+  "examples": {
+    "0": [
+      {
+        "original_id": "MAC000002",
+        "encoded_row_within_household": 512,
+        "encoded_timestamp": "2012-10-22 16:30:00",
+        "raw_timestamp": "2012-10-22 19:30:00.0000000",
+        "raw_partition": 0,
+        "raw_partition_row": 518,
+        "raw_kwh": [
+          0.284,
+          0.282,
+          0.441,
+          0.705,
+          0.393,
+          0.372,
+          0.215,
+          0.315,
+          0.216,
+          0.22,
+          0.152,
+          0.215,
+          0.121,
+          0.151,
+          0.079,
+          0.141
+        ]
+      },
+      {
+        "original_id": "MAC000002",
+        "encoded_row_within_household": 1024,
+        "encoded_timestamp": "2012-11-02 08:30:00",
+        "raw_timestamp": "2012-11-02 11:30:00.0000000",
+        "raw_partition": 0,
+        "raw_partition_row": 1030,
+        "raw_kwh": [
+          0.154,
+          0.168,
+          0.144,
+          0.208,
+          0.276,
+          1.284,
+          0.474,
+          0.342,
+          0.324,
+          0.325,
+          0.468,
+          0.346,
+          0.45,
+          0.686,
+          0.432,
+          0.388
+        ]
+      },
+      {
+        "original_id": "MAC000002",
+        "encoded_row_within_household": 1536,
+        "encoded_timestamp": "2012-11-14 01:00:00",
+        "raw_timestamp": "2012-11-14 04:00:00.0000000",
+        "raw_partition": 0,
+        "raw_partition_row": 1542,
+        "raw_kwh": [
+          0.08,
+          0.129,
+          0.097,
+          0.109,
+          0.114,
+          0.09,
+          0.128,
+          0.076,
+          0.126,
+          0.097,
+          0.154,
+          0.541,
+          0.212,
+          0.561,
+          0.316,
+          0.183
+        ]
+      },
+      {
+        "original_id": "MAC000002",
+        "encoded_row_within_household": 2048,
+        "encoded_timestamp": "2012-11-24 16:30:00",
+        "raw_timestamp": "2012-11-24 19:30:00.0000000",
+        "raw_partition": 0,
+        "raw_partition_row": 2054,
+        "raw_kwh": [
+          0.188,
+          0.262,
+          1.086,
+          0.273,
+          0.243,
+          0.211,
+          0.273,
+          0.201,
+          0.279,
+          0.246,
+          0.264,
+          0.247,
+          0.218,
+          0.25,
+          0.206,
+          0.211
+        ]
+      },
+      {
+        "original_id": "MAC000002",
+        "encoded_row_within_household": 2560,
+        "encoded_timestamp": "2012-12-05 08:30:00",
+        "raw_timestamp": "2012-12-05 11:30:00.0000000",
+        "raw_partition": 0,
+        "raw_partition_row": 2566,
+        "raw_kwh": [
+          0.229,
+          0.136,
+          0.134,
+          1.066,
+          0.382,
+          0.581,
+          0.096,
+          0.118,
+          0.087,
+          0.144,
+          0.072,
+          0.113,
+          0.433,
+          0.563,
+          0.283,
+          0.259
+        ]
+      }
+    ],
+    "146": [
+      {
+        "original_id": "MAC000148",
+        "encoded_row_within_household": 16582,
+        "encoded_timestamp": "2012-05-22 15:30:00",
+        "raw_timestamp": "2012-12-11 07:00:00.0000000",
+        "raw_partition": 4,
+        "raw_partition_row": 227359,
+        "raw_kwh": [
+          0.286,
+          0.289,
+          0.284,
+          0.266,
+          0.14,
+          0.14,
+          0.141,
+          0.141,
+          0.14,
+          0.14,
+          0.14,
+          0.139,
+          0.14,
+          0.14,
+          0.141,
+          0.139
+        ]
+      }
+    ],
+    "5544": [
+      {
+        "original_id": "MAC005558",
+        "encoded_row_within_household": 0,
+        "encoded_timestamp": "2012-10-17 20:30:00",
+        "raw_timestamp": "2012-10-15 12:00:00.0000000",
+        "raw_partition": 134,
+        "raw_partition_row": 9603,
+        "raw_kwh": [
+          0.595,
+          0.548,
+          0.542,
+          0.319,
+          0.072,
+          0.027,
+          0.011,
+          0.009,
+          0.082,
+          0.143,
+          0.124,
+          0.274,
+          0.263,
+          0.374,
+          0.396,
+          0.192
+        ]
+      }
+    ]
+  },
+  "excerpt_note": "Only three households included here; full evidence remains in runs/evidence/lcl-identity-2012/identity-evidence.json."
+}

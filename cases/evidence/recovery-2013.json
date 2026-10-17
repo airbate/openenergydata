@@ -1,0 +1,8 @@
+{
+  "source": "/Volumes/Ventoy/data_lcl/df_2013.feather",
+  "recovered_file": "/Users/airbate/Documents/Codex/2026-10-16/new-chat-2/work/df_2013-recovered.feather",
+  "complete": false,
+  "rows": 20643840,
+  "batches": 315,
+  "error": "Expected to be able to read 3939672 bytes for message body, got 117674"
+}

@@ -1,0 +1,9 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>能源数据可信性检查</title><style>body{max-width:1000px;margin:40px auto;padding:0 24px;font:16px/1.7 system-ui;background:#f5f7fa;color:#17243a}article{background:white;padding:20px;margin:18px 0;border-radius:12px}pre{white-space:pre-wrap;overflow-wrap:anywhere}h1{font-size:30px}</style><h1>能源数据可信性检查</h1><p>状态：review_required</p><p>Feather V2 文件可解码性、参考哈希比对、LCL 户号表示与清单单位一致性；不认证完整性或适合建模。</p><article><h2>manifest.schema · pass</h2><p>runs/lcl-original-ids-partial</p><p>结构有效不等于字段声明真实。</p><p>修正清单结构错误后再解释数值。</p><details><summary>查看证据</summary><pre>{
+  &quot;errors&quot;: []
+}</pre></details></article><article><h2>units.declaration · pass</h2><p>runs/lcl-original-ids-partial</p><p>单位声明冲突会影响阈值和误差解释；通过只说明已声明元数据一致，不能反推原始测量单位。</p><p>核实来源单位和采样区间，统一元数据；能量需除以区间时长后再与功率阈值比较。</p><details><summary>查看证据</summary><pre>{
+  &quot;channels_checked&quot;: 5229,
+  &quot;failure_count&quot;: 0,
+  &quot;failures&quot;: []
+}</pre></details></article><article><h2>units.measurement_truth · unknown</h2><p>runs/lcl-original-ids-partial</p><p>本工具未独立验证原始测量单位、时区或采样区间声明。</p><p>用来源说明、标定信息或已知样本交叉验证。</p><details><summary>查看证据</summary><pre>{
+  &quot;verified_against_source_specification&quot;: false
+}</pre></details></article></html>

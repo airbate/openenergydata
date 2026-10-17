@@ -1,0 +1,92 @@
+[
+  {
+    "dataset": "lcl-original-ids-partial",
+    "status": "review_required",
+    "elapsed_seconds": 2.89,
+    "checks": {
+      "dataset.references": {
+        "status": "pass",
+        "evidence": {
+          "channels_declared": 5229,
+          "failure_count": 0,
+          "examples": []
+        }
+      },
+      "dataset.integrity": {
+        "status": "pass",
+        "evidence": {
+          "matched": 5229,
+          "failed": 0,
+          "missing_reference": 0,
+          "issue_count": 0,
+          "examples": []
+        }
+      },
+      "dataset.contents": {
+        "status": "pass",
+        "evidence": {
+          "files_decoded": 5229,
+          "rows_examined": 35054028,
+          "failed_channels": 0,
+          "issue_count": 0,
+          "examples": [],
+          "batch_rows": 65536,
+          "example_limit": 20,
+          "duplicate_definition": "strict ascending order; counts are adjacent equal/descending steps, including batch boundaries"
+        }
+      },
+      "dataset.coverage": {
+        "status": "unknown",
+        "evidence": {
+          "expected_observation_window_provided": false,
+          "expected_household_inventory_provided": false
+        }
+      }
+    }
+  },
+  {
+    "dataset": "lcl-2012-encoded",
+    "status": "review_required",
+    "elapsed_seconds": 3.33,
+    "checks": {
+      "dataset.references": {
+        "status": "pass",
+        "evidence": {
+          "channels_declared": 5552,
+          "failure_count": 0,
+          "examples": []
+        }
+      },
+      "dataset.integrity": {
+        "status": "pass",
+        "evidence": {
+          "matched": 5552,
+          "failed": 0,
+          "missing_reference": 0,
+          "issue_count": 0,
+          "examples": []
+        }
+      },
+      "dataset.contents": {
+        "status": "pass",
+        "evidence": {
+          "files_decoded": 5552,
+          "rows_examined": 60127023,
+          "failed_channels": 0,
+          "issue_count": 0,
+          "examples": [],
+          "batch_rows": 65536,
+          "example_limit": 20,
+          "duplicate_definition": "strict ascending order; counts are adjacent equal/descending steps, including batch boundaries"
+        }
+      },
+      "dataset.coverage": {
+        "status": "unknown",
+        "evidence": {
+          "expected_observation_window_provided": false,
+          "expected_household_inventory_provided": false
+        }
+      }
+    }
+  }
+]

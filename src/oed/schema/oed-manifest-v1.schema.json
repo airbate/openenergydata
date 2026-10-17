@@ -117,9 +117,9 @@
                     "id": { "type": "string" },
                     "path": { "type": "string", "pattern": "^sites/[^/]+/[^/]+\\.parquet$" },
                     "role": { "enum": ["site_meter", "submeter"] },
-                    "physical_quantity": { "enum": ["power", "energy", "voltage", "current"] },
+                    "physical_quantity": { "enum": ["power", "energy", "voltage", "current", "normalized"] },
                     "ac_type": { "enum": ["active", "apparent", "reactive"] },
-                    "unit": { "enum": ["W", "kW", "MW", "kWh", "MWh", "V", "A"] },
+                    "unit": { "enum": ["W", "kW", "MW", "kWh", "MWh", "V", "A", "1"] },
                     "nominal_interval_s": { "type": "number", "exclusiveMinimum": 0 },
                     "description": { "type": "string" },
                     "appliance": {

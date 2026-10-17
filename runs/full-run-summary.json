@@ -1,0 +1,30 @@
+[
+  {
+    "dataset": "lcl-original-ids-partial",
+    "input_rows": 35078410,
+    "output_rows": 35054028,
+    "duplicates_removed": 24382,
+    "households": 5229,
+    "quality_score": 1.4,
+    "findings": {
+      "gap": 2042,
+      "jitter": 1022,
+      "zero_run": 49518
+    },
+    "benchmark_rows": 15687
+  },
+  {
+    "dataset": "lcl-2012-encoded",
+    "input_rows": 60393414,
+    "output_rows": 60127023,
+    "duplicates_removed": 266391,
+    "households": 5552,
+    "quality_score": 0.0,
+    "findings": {
+      "gap": 7943,
+      "jitter": 1991,
+      "zero_run": 66412
+    },
+    "benchmark_rows": 16647
+  }
+]

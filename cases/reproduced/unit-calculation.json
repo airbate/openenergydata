@@ -1,0 +1,20 @@
+{
+  "fixture_kind": "synthetic, not an observed LCL outlier",
+  "input": {
+    "value": 30,
+    "unit": "kWh",
+    "interval_seconds": 1800
+  },
+  "legacy_raw_comparison_exceeds_50000": false,
+  "converted_watts": 60000.0,
+  "corrected_findings": [
+    {
+      "type": "outlier",
+      "severity": "warning",
+      "channel": "sites/demo/energy.parquet",
+      "start": "2013-01-01 00:30:00+00:00",
+      "end": "2013-01-01 00:30:00+00:00",
+      "detail": "1 个样本超过 50000 W 合理性上限，最大 60000 W"
+    }
+  ]
+}

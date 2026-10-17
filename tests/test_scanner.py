@@ -46,3 +46,17 @@ def test_report_files_written(tmp_path_factory, redd_source: Path):
     assert (out / "quality-report.json").exists()
     text = path.read_text(encoding="utf-8")
     assert "质量得分" in text and "| critical |" in text
+
+
+def test_interval_energy_uses_watt_thresholds():
+    import pandas as pd
+    from oed.quality.scanner import scan_channel
+    df = pd.DataFrame({'timestamp': pd.date_range('2014-01-01', periods=3, freq='30min', tz='UTC'),
+                       'power_w': [1., 30., 1.], 'quality': [0, 0, 0]})
+    channel = {'role': 'site_meter', 'path': 'energy.parquet',
+               'physical_quantity': 'energy', 'unit': 'kWh', 'nominal_interval_s': 1800}
+    findings = scan_channel(df, channel, ScanConfig())
+    outliers = [f for f in findings if f['type'] == 'outlier']
+    assert len(outliers) == 1
+    assert '60000 W' in outliers[0]['detail']
+    assert df['power_w'].tolist() == [1., 30., 1.]

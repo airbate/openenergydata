@@ -1,0 +1,11 @@
+{
+  "commit": "9192b8874f5bdf1eed3c99a6deba3896bd2ae090",
+  "notebook_sha256": "03f1a435ca47a3129e1523a7c303d76919b3913d87f206c7d518c415a7234f16",
+  "cell_indices": "zero based",
+  "cells": {
+    "125": "# Assuming backup_df is your backup dataframe\ndf_2012['DateTime'] = or_df_2012['DateTime']\ndf_2012.head(10)",
+    "141": "from sklearn.preprocessing import LabelEncoder\n\nle_lclid = LabelEncoder()\ndf_2012['LCLid'] = le_lclid.fit_transform(df_2012['LCLid'])\n\nle_stdortou = LabelEncoder()\ndf_2012['stdorToU'] = le_stdortou.fit_transform(df_2012['stdorToU'])\n",
+    "149": "# Min Max Scaler to scale the numeric columns in a range for effective model training\n\nfrom sklearn.preprocessing import MinMaxScaler\n\n# Numeric columns that you need to scale\nnumeric_columns = ['KWH/hh (per half hour) ', 'Weekday', 'Month', 'Hour', \n                   'Lag_1', 'Lag_2', 'Lag_3', 'Rolling_Mean_3', 'Rolling_Mean_10', \n                   'Rolling_Std_3', 'Rolling_Std_10']\n\n# Initialize the MinMaxScaler\nscaler = MinMaxScaler()\n\n# Apply scaling only on numeric features\ndf_2012[numeric_columns] = scaler.fit_transform(df_2012[numeric_columns])\n\n# Verifying the results\nprint(df_2012[numeric_columns].head())\n",
+    "151": "df_2012.to_feather('df_2012.feather')"
+  }
+}

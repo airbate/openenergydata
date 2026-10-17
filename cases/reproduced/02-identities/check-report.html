@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>能源数据可信性检查</title><style>body{max-width:1000px;margin:40px auto;padding:0 24px;font:16px/1.7 system-ui;background:#f5f7fa;color:#17243a}article{background:white;padding:20px;margin:18px 0;border-radius:12px}pre{white-space:pre-wrap;overflow-wrap:anywhere}h1{font-size:30px}</style><h1>能源数据可信性检查</h1><p>状态：fail</p><p>Feather V2 文件可解码性、参考哈希比对、LCL 户号表示、清单单位一致性、Parquet 哈希与实际内容；不认证完整覆盖或适合建模。</p><article><h2>source.checksum · pass</h2><p>cases/reproduced/text-ids.feather</p><p>哈希匹配仅证明与提供的参考版本一致，不证明上游文件完整或内容正确。</p><p>缺少参考哈希时向发布方获取；不匹配时隔离并核对版本。</p><details><summary>查看证据</summary><pre>{
+  &quot;sha256&quot;: &quot;92733a370310c38c5764bb2934f9f0261f1ab0ba0a4c5300bb812e4eb3302b20&quot;,
+  &quot;expected_sha256&quot;: &quot;92733a370310c38c5764bb2934f9f0261f1ab0ba0a4c5300bb812e4eb3302b20&quot;,
+  &quot;bytes&quot;: 2514
+}</pre></details></article><article><h2>source.structure · pass</h2><p>cases/reproduced/text-ids.feather</p><p>全部 IPC 批次可解码；尚不证明所有预期时间和家庭都在文件中。</p><p>继续检查发布方覆盖范围及身份映射。</p><details><summary>查看证据</summary><pre>{
+  &quot;decoded_rows&quot;: 3,
+  &quot;decoded_batches&quot;: 1
+}</pre></details></article><article><h2>source.checksum · pass</h2><p>cases/reproduced/numeric-ids.feather</p><p>哈希匹配仅证明与提供的参考版本一致，不证明上游文件完整或内容正确。</p><p>缺少参考哈希时向发布方获取；不匹配时隔离并核对版本。</p><details><summary>查看证据</summary><pre>{
+  &quot;sha256&quot;: &quot;38bfe3c49538cf77b340a072d1e3da51c4408d7bfd4af8fefee19aef895ca997&quot;,
+  &quot;expected_sha256&quot;: &quot;38bfe3c49538cf77b340a072d1e3da51c4408d7bfd4af8fefee19aef895ca997&quot;,
+  &quot;bytes&quot;: 2482
+}</pre></details></article><article><h2>source.structure · pass</h2><p>cases/reproduced/numeric-ids.feather</p><p>全部 IPC 批次可解码；尚不证明所有预期时间和家庭都在文件中。</p><p>继续检查发布方覆盖范围及身份映射。</p><details><summary>查看证据</summary><pre>{
+  &quot;decoded_rows&quot;: 3,
+  &quot;decoded_batches&quot;: 1
+}</pre></details></article><article><h2>identity.cross_file · fail</h2><p>输入文件的户号关联</p><p>户号表示不同，未经映射的跨文件关联不受支持。</p><p>取得包含版本与来源的映射表；此前按文件/年份命名空间隔离，不按序号猜测 MAC 户号。</p><details><summary>查看证据</summary><pre>{
+  &quot;schemas&quot;: [
+    {
+      &quot;file&quot;: &quot;cases/reproduced/text-ids.feather&quot;,
+      &quot;type&quot;: &quot;large_string&quot;,
+      &quot;family&quot;: &quot;text&quot;,
+      &quot;sample&quot;: [
+        &quot;MAC000001&quot;,
+        &quot;MAC000001&quot;,
+        &quot;MAC000001&quot;
+      ]
+    },
+    {
+      &quot;file&quot;: &quot;cases/reproduced/numeric-ids.feather&quot;,
+      &quot;type&quot;: &quot;int64&quot;,
+      &quot;family&quot;: &quot;numeric&quot;,
+      &quot;sample&quot;: [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  &quot;mapping_provided&quot;: false
+}</pre></details></article></html>

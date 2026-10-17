@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>能源数据可信性检查</title><style>body{max-width:1000px;margin:40px auto;padding:0 24px;font:16px/1.7 system-ui;background:#f5f7fa;color:#17243a}article{background:white;padding:20px;margin:18px 0;border-radius:12px}pre{white-space:pre-wrap;overflow-wrap:anywhere}h1{font-size:30px}</style><h1>能源数据可信性检查</h1><p>状态：fail</p><p>Feather V2 文件可解码性、参考哈希比对、LCL 户号表示、清单单位一致性、Parquet 哈希与实际内容；不认证完整覆盖或适合建模。</p><article><h2>source.checksum · pass</h2><p>cases/reproduced/truncated.feather</p><p>哈希匹配仅证明与提供的参考版本一致，不证明上游文件完整或内容正确。</p><p>缺少参考哈希时向发布方获取；不匹配时隔离并核对版本。</p><details><summary>查看证据</summary><pre>{
+  &quot;sha256&quot;: &quot;4a990576b953a95e943a275315a4237950dc78a01392e10a63e96e8512e8a68f&quot;,
+  &quot;expected_sha256&quot;: &quot;4a990576b953a95e943a275315a4237950dc78a01392e10a63e96e8512e8a68f&quot;,
+  &quot;bytes&quot;: 2494
+}</pre></details></article><article><h2>source.structure · fail</h2><p>cases/reproduced/truncated.feather</p><p>文件不能作为完整 Feather 数据输入；可能存在截断或格式损坏。</p><p>保留原文件，核对参考哈希；如恢复完整批次，单独标记为部分恢复，不能补造缺失记录。</p><details><summary>查看证据</summary><pre>{
+  &quot;error&quot;: &quot;Not an Arrow file&quot;,
+  &quot;decoded_rows&quot;: 0,
+  &quot;decoded_batches&quot;: 0
+}</pre></details></article><article><h2>identity.cross_file · unknown</h2><p>输入文件的户号关联</p><p>相同类型或相似编号不能证明跨文件家庭身份一致；本检查不验证户号映射。</p><p>取得包含版本与来源的映射表；此前按文件/年份命名空间隔离，不按序号猜测 MAC 户号。</p><details><summary>查看证据</summary><pre>{
+  &quot;schemas&quot;: [],
+  &quot;mapping_provided&quot;: false
+}</pre></details></article></html>

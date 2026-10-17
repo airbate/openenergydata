@@ -1,0 +1,128 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>可信能源数据检查 · 三个案例</title><style>body{margin:0;background:#f1f5f9;color:#17283d;font:16px/1.8 system-ui}main{max-width:1000px;margin:40px auto;padding:0 22px}section{background:#fff;border:1px solid #dce5ef;border-radius:16px;padding:32px;margin-bottom:28px}h1{font-size:28px;line-height:1.4}h2{font-size:21px;margin-top:30px;color:#174b69}a{color:#126b91}pre{background:#edf3f7;padding:16px;overflow:auto;border-radius:8px}code{overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:12px;border-bottom:1px solid #dce5ef;text-align:left;vertical-align:top}@media(max-width:640px){section{padding:18px}table{display:block;overflow:auto}}@media print{section{break-before:page;border:0}}</style></head><body><aside style="padding:20px;background:#fff3cd;color:#332701">2026-10-16 更新：官方 2013 全年数据已恢复；2012 户号映射已分级重建。旧 2012 数据存在归一化与时间错位，旧物理指标已撤回。<a href="../LCL-SOURCE-RECOVERY.md">查看恢复报告</a></aside><main><section><h1>可信能源数据检查：三个可复现案例</h1>
+<p>本工具在建模前检查可验证的前提，提供证据、影响和处理建议。它不会给出“数据已可信”的笼统认证，也不把未知项当作通过。</p>
+<p><strong>三个真实问题，四份最小演示报告</strong>：第三个案例分别保存修复前与修复后报告。演示数据均为合成小样本；真实证据与演示结果分开保存。</p>
+<table>
+<thead>
+<tr>
+<th>案例</th>
+<th>已验证的事实</th>
+<th>检查边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="01-truncated-source.md">01 文件截断</a></td>
+<td>2013 文件与参考哈希一致，仍无法作为 Feather 文件打开</td>
+<td>哈希一致不保证发布方文件完整</td>
+</tr>
+<tr>
+<td><a href="02-household-identity.md">02 户号映射缺失</a></td>
+<td>2012 户号是整数，其他可读年份使用 MAC 字符串</td>
+<td>表示不同不证明一定不同户；没有映射就不能直接关联</td>
+</tr>
+<tr>
+<td><a href="03-unit-consistency.md">03 单位混用</a></td>
+<td>原代码存在能量/功率比较错误；10,781 个通道的清单字段单位描述冲突</td>
+<td>声明一致不保证原始传感器单位或时间区间声明真实</td>
+</tr>
+</tbody>
+</table>
+<h2>一条命令复现</h2>
+<p>在项目根目录、依赖已安装的情况下：</p>
+<pre><code class="language-bash">.venv/bin/python scripts/reproduce_trust_cases.py
+</code></pre>
+<p>无需下载数据或插入 SD 卡。输出位于 <code>cases/reproduced/</code>。程序断言前两个案例和单位修复前为 <code>fail</code>，单位修复后为 <code>review_required</code>，而不是“已认证”。</p>
+<ul>
+<li><a href="reproduced/01-truncated/check-report.html">文件截断演示报告</a></li>
+<li><a href="reproduced/02-identities/check-report.html">户号关联演示报告</a></li>
+<li><a href="reproduced/03-units-before/check-report.html">单位修复前</a> / <a href="reproduced/03-units-after/check-report.html">单位修复后</a></li>
+</ul>
+<h2>检查自己的数据</h2>
+<pre><code class="language-bash">.venv/bin/oed check file1.feather file2.feather --checksums reference-sha256.json -o checks/sources
+.venv/bin/oed check --dataset runs/lcl-original-ids-partial -o checks/dataset
+</code></pre>
+<p><code>--checksums</code> 接受 JSON 文件名到 SHA-256 的映射。参考哈希的来源需要使用者确认；工具不会将随意输入的哈希当作权威来源。文件名重复时请分别检查并提供对应参考。</p>
+<p>当前支持 Feather V2 / Arrow IPC 文件、LCLid 户号字段，以及本项目 OED 清单里的能源/功率单位；其他格式不在这一版覆盖范围。</p>
+<p>每次生成 JSON、Markdown、HTML 三种报告。输入只读，报告写入 <code>-o</code> 目录。</p>
+<ul>
+<li><code>fail</code>：存在证据支持的阻断项；退出码 2。户号阻断针对跨文件身份关联，不代表单年数据全部不可使用。</li>
+<li><code>review_required</code>：没有发现阻断项，但有未知事项待核实；退出码 0，自动流程必须再检查 JSON 状态。</li>
+<li><code>pass</code>：只表示请求范围内的检查通过；不是通用的数据质量保证。</li>
+</ul>
+<h2>真实运行证据</h2>
+<p><code>real-checks/</code> 保留真实文件检查和两个大规模数据集单位修复前后的报告；<code>evidence/</code> 保存参考清单和历史恢复审计。报告包含运行机器的路径，便于追溯，但不包含原始大数据文件。</p>
+<p>真实文件检查已读取所有可解码批次；缺少文件尾的 2013 文件在打开阶段失败。恢复的 20,643,840 条记录来自此前独立执行的恢复工具，不能把它们当成本次标准文件检查通过的结果。</p>
+<h2>未解决事项</h2>
+<ol>
+<li>上游完整 2013 文件和 2012 户号映射仍未取得。</li>
+<li>原始单位、时区和观测覆盖范围仍需来源规范核对。</li>
+<li>预测基准协议和旧质量评分仍不适合直接用于正式模型优劣结论。</li>
+</ol>
+<p>本轮的成功标准是正确暴露这些限制，而不是消除报告中的所有未知项。</p>
+<h2>从声明检查推进到实际内容检查</h2>
+<p>现在还会检查统一格式数据文件的哈希、必要列、UTC 时间顺序和非有限数值。详见 <a href="../CONTENT-VALIDATION.md">内容检查记录</a>。使用 <code>scripts/reproduce_content_checks.py</code> 可演示“文件可读、哈希匹配，但内容仍有问题”的情形。</p>
+</section><section><h1>案例 01：哈希匹配的文件仍然被截断</h1>
+<h2>真实证据</h2>
+<p>对象：SD 卡 <code>df_2013.feather</code>，1,219,620,962 字节。</p>
+<p>SHA-256：<code>fc38a590d5bfc6472959657155d6d4562ce4902186f685d09d547cb83eef262d</code>。</p>
+<p>该值与保存的 <a href="evidence/lcl-source-tree.json">Hugging Face 文件清单快照</a> 中 LFS oid 一致。来源 API：<code>https://huggingface.co/api/datasets/Sufiyan83/Low-Carbon-London-Smart-Meter-Cleaned-FeatureReady/tree/main?expand=false</code>。快照取于 2026-10-16，只代表该版本。</p>
+<p>普通 Feather 打开报 <code>Not an Arrow file</code>，文件头为 ARROW1，文件尾不是 ARROW1。独立的 <a href="evidence/recovery-2013.json">恢复审计</a> 显示，前 315 个批次可读取；后续消息体预期 3,939,672 字节，实际只剩 117,674 字节。恢复了 20,643,840 行，但不能确认其覆盖范围完整。</p>
+<h2>会造成什么影响</h2>
+<p>按文件大小判断下载完成，或看到哈希匹配就开始建模，都会漏掉这个问题。正常读取会失败；把恢复数据当作全年数据，则会使覆盖率、连续性和预测评估失真。</p>
+<p>这里能够确认“与上游发布版本一致且结构损坏”，不能据此确定上游在哪一步发生了损坏。</p>
+<h2>工具如何处理</h2>
+<p><code>source.checksum</code> 独立记录参考一致性，<code>source.structure</code> 读取全部 IPC 批次并验证结构。前者通过不会覆盖后者失败。报告不自动修改或修复原文件。</p>
+<p>处理建议：隔离原文件，保留校验值；联系发布方取得完整版本。必须抢救时，将完整批次写到新文件，并保留“不保证完整”的恢复审计。</p>
+<h2>最小复现与验收</h2>
+<pre><code class="language-bash">.venv/bin/python scripts/reproduce_trust_cases.py
+.venv/bin/oed check cases/reproduced/truncated.feather -o cases/reproduced/manual-truncated
+</code></pre>
+<p>生成器在合成的 Feather 文件尾移除 20 字节，并使用损坏版本自身的哈希模拟“上游参考也损坏”的场景。这是机制复现，不是 2013 年原文件的复制。</p>
+<p>验收：生成报告中哈希匹配为 <code>pass</code>，结构为 <code>fail</code>，整体为 <code>fail</code>；检查前后输入哈希不变。CLI 返回 2 是预期结果。</p>
+</section><section><h1>案例 02：不同年份的户号不能直接关联</h1>
+<h2>真实证据</h2>
+<ul>
+<li>2011 年包内样本和 2014 年文件的 LCLid 为 MAC 字符串或字符串字典类型。</li>
+<li>2012 年文件的 LCLid 为 int64，开头样本为 0。</li>
+<li>本次源文件清单和压缩包未提供这两类户号之间的映射。</li>
+</ul>
+<p>导入后原始户号组有 5,229 个户号；2012 年独立组有 5,552 个编码。它们可能对应重叠家庭，不能相加当作独立家庭总数，也不能假设编号 0 就是 MAC000000 或第一个 MAC 户。</p>
+<h2>会造成什么影响</h2>
+<p>错误的身份关联会把不同家庭的时间序列接在一起，或把同一家庭拆成多个对象，进而影响跨年统计、训练测试隔离和户级预测。当前证据支持“映射未知”，不支持“确定是不同家庭”。</p>
+<h2>工具如何处理</h2>
+<p><code>identity.cross_file</code> 输出每个文件的字段类型与前五个样本。混合数值/文本表示在未提供映射时阻断跨文件身份关联；类型相同仍标记 <code>unknown</code>，不作身份认证。</p>
+<p>本版检查器不支持验证外部映射表，不能通过简单添加文件让它自动转为通过。取得映射后，仍需要检查来源版本、唯一性、覆盖率以及是否一对一。</p>
+<p>现有导入器要求数值户号显式设置 <code>--encoded-id-prefix</code>，本次使用 <code>encoded2012_</code>。该前缀仅防止误合并，不恢复真实身份。</p>
+<h2>最小复现与验收</h2>
+<pre><code class="language-bash">.venv/bin/python scripts/reproduce_trust_cases.py
+.venv/bin/oed check cases/reproduced/text-ids.feather cases/reproduced/numeric-ids.feather -o cases/reproduced/manual-identities
+</code></pre>
+<p>合成文件分别使用 <code>MAC000001</code> 和 0，时间与读数相同，但不能凭这些特征断言同一家庭。</p>
+<p>验收：跨文件身份关联为 <code>fail</code>，证据同时显示 text 与 numeric；单独检查文本文件时身份仍为 <code>unknown</code>。CLI 的失败是针对所请求的身份关联，不禁止单文件内分析。</p>
+</section><section><h1>案例 03：kWh 读数不能直接与 W 阈值比较</h1>
+<h2>实际代码与元数据问题</h2>
+<p>原扫描器直接把统一表中的 <code>power_w</code> 列数值与 50,000 W 阈值比较，但 LCL 通道在这一列中存放的是半小时电量 kWh。列名不能决定物理量。</p>
+<p>另发现：通道清单声明 energy / kWh，而 recordSet 的 <code>power_w</code> 字段描述仍为 W。真实导入结果中，原始户号组 5,229 个通道和 2012 年组 5,552 个通道存在该声明冲突，共 10,781 个。修复前后报告保存在 <code>real-checks/</code>。</p>
+<h2>影响与计算证据</h2>
+<p>使用明确标注的合成样本：半小时电量 30 kWh。</p>
+<ul>
+<li>错误比较：30 &gt; 50,000，结果为否。</li>
+<li>正确换算：30 × 1,000 × 3,600 ÷ 1,800 = 60,000 W，超过 50,000 W 阈值。</li>
+</ul>
+<p>这个样本用于证明代码差异，<strong>不是声称在真实 LCL 数据中找到了 30 kWh 异常点</strong>。超过阈值只是复核提示，不等于物理上不可能。</p>
+<h2>修复</h2>
+<ol>
+<li>扫描器、基准和检查器复用显式单位换算函数。</li>
+<li>能量换算要求有效且为正的采样区间；未知单位、无穷或 NaN 区间拒绝处理。</li>
+<li>DatasetBuilder 根据通道单位写入 recordSet 数值字段描述，避免继续产生 W/kWh 冲突。</li>
+<li>修正真实数据集清单的字段描述；未修改 Parquet 读数。</li>
+<li>基准结果以 kW 表示 LCL 的平均功率，原始电量仍是 kWh。</li>
+</ol>
+<h2>最小复现与验收</h2>
+<pre><code class="language-bash">.venv/bin/python scripts/reproduce_trust_cases.py
+.venv/bin/oed check --dataset cases/reproduced/energy-dataset -o cases/reproduced/manual-units
+</code></pre>
+<p>生成器保存单位修复前、修复后两份报告，以及 <code>unit-calculation.json</code>。</p>
+<p>验收：修复前单位声明检查失败；修复后该检查通过，但整体仍为 <code>review_required</code>。测量单位是否真实、时区和采样区间是否准确，仍需要来源规范交叉验证。</p>
+<p>这是“元数据自洽与计算正确”的保证，不能扩大成“原始测量已验证”。</p>
+</section></main></body></html>

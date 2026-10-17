@@ -53,7 +53,10 @@ class DatasetBuilder:
         self._record_sets.append({
             "@type": "cr:RecordSet", "name": f"{site_id}/{channel['id']}",
             "description": channel.get("description", "power time series"),
-            "field": fields or CHANNEL_FIELDS,
+            "field": fields or [
+                {**field, "description": channel["unit"]} if field["name"] == "power_w" else dict(field)
+                for field in CHANNEL_FIELDS
+            ],
         })
         return path
 

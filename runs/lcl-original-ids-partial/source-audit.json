@@ -1,0 +1,23 @@
+[
+  {
+    "file": "data_seed/df_2011.feather",
+    "source_rows": 399737,
+    "valid_rows": 399737,
+    "selected_rows": 399737,
+    "encoded_id_prefix": null
+  },
+  {
+    "file": "../../work/df_2013-recovered.feather",
+    "source_rows": 20643840,
+    "valid_rows": 20643839,
+    "selected_rows": 20643839,
+    "encoded_id_prefix": null
+  },
+  {
+    "file": "/Volumes/Ventoy/data_lcl/df_2014.feather",
+    "source_rows": 14034834,
+    "valid_rows": 14034834,
+    "selected_rows": 14034834,
+    "encoded_id_prefix": null
+  }
+]

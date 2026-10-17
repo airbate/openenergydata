@@ -22,10 +22,20 @@ from oed.io import load_manifest, read_channel_parquet
 
 
 def _series_for_benchmark(df: pd.DataFrame, channel: dict) -> pd.Series:
+    from oed.units import watts_factor
+    unit = _benchmark_unit(channel)
+    scale = {"W": 1.0, "kW": 1000.0, "MW": 1_000_000.0}.get(unit)
+    if scale is None:
+        raise ValueError(f"Unsupported benchmark unit: {unit}")
+    return df["power_w"] * (watts_factor(channel) / scale)
+
+
+def _benchmark_unit(channel: dict) -> str:
+    unit = channel.get("unit", "W")
+    # Energy-per-interval values are converted to average power above.
     if channel.get("physical_quantity") == "energy":
-        interval = float(channel.get("nominal_interval_s", 1800.0))
-        return df["power_w"] * 3600.0 / interval  # kWh/interval -> kW avg
-    return df["power_w"]
+        return {"Wh": "W", "kWh": "kW", "MWh": "MW"}.get(unit, unit)
+    return unit
 
 
 def _metrics(actual: np.ndarray, pred: np.ndarray, unit: str) -> dict:
@@ -51,7 +61,7 @@ def run_forecast(dataset_dir: Path, train_frac: float = 0.8) -> list[dict]:
         series = _series_for_benchmark(df, channel).reset_index(drop=True)
         if len(series) < 20:
             continue
-        unit = channel.get("unit", "W")
+        unit = _benchmark_unit(channel)
         n_train = int(len(series) * train_frac)
         train, test = series.iloc[:n_train], series.iloc[n_train:]
         times = df["timestamp"].reset_index(drop=True)
@@ -63,8 +73,9 @@ def run_forecast(dataset_dir: Path, train_frac: float = 0.8) -> list[dict]:
         local = times.dt.tz_convert(site.get("timezone", "UTC"))
         key = local.dt.strftime("%H:%M")
         profile = train.groupby(key.iloc[:n_train]).mean()
+        fallback = float(train.mean())
         baselines["daily_profile"] = np.array(
-            [profile.get(k, train.mean()) for k in key.iloc[n_train:]])
+            [profile.get(k, fallback) for k in key.iloc[n_train:]])
         # seasonal lag (24 h) with naive fallback
         nominal = float(pd.Series(times.diff().dt.total_seconds()).median() or 1.0)
         lag = max(1, int(round(24 * 3600 / nominal)))
@@ -112,9 +123,10 @@ def run_nilm(dataset_dir: Path, train_frac: float = 0.8) -> list[dict]:
             local = times.dt.tz_convert(site.get("timezone", "UTC"))
             key = local.dt.strftime("%H:%M")
             profile = train.groupby(key.iloc[:n_train]).mean()
-            pred = np.array([profile.get(k, train.mean()) for k in key.iloc[n_train:]])
+            fallback = float(train.mean())
+            pred = np.array([profile.get(k, fallback) for k in key.iloc[n_train:]])
             actual = test.to_numpy()
-            m = _metrics(actual, pred, channel.get("unit", "W"))
+            m = _metrics(actual, pred, _benchmark_unit(channel))
             gt_energy = float(np.abs(actual).sum())
             pred_energy = float(np.abs(pred).sum())
             m["sae_pct"] = round(

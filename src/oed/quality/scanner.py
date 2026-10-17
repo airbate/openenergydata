@@ -36,7 +36,8 @@ def scan_channel(df: pd.DataFrame, channel: dict, cfg: ScanConfig) -> list[dict]
     findings: list[dict] = []
     site = channel["role"] == "site_meter"
     ts = df["timestamp"]
-    power = df["power_w"]
+    from oed.units import watts_factor
+    power = df["power_w"] * watts_factor(channel)
     diffs = ts.diff().dt.total_seconds().dropna()
     nominal = float(diffs.median()) if len(diffs) else channel.get("nominal_interval_s", 1.0)
 

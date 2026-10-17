@@ -1,0 +1,14 @@
+{
+  "2012": {
+    "parquet_files": 168,
+    "rows": 60410060,
+    "bytes": 181959109,
+    "all_parquet_hashes_match": true
+  },
+  "2013": {
+    "parquet_files": 168,
+    "rows": 93087837,
+    "bytes": 301319107,
+    "all_parquet_hashes_match": true
+  }
+}

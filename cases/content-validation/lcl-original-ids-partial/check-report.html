@@ -1,0 +1,31 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>能源数据可信性检查</title><style>body{max-width:1000px;margin:40px auto;padding:0 24px;font:16px/1.7 system-ui;background:#f5f7fa;color:#17243a}article{background:white;padding:20px;margin:18px 0;border-radius:12px}pre{white-space:pre-wrap;overflow-wrap:anywhere}h1{font-size:30px}</style><h1>能源数据可信性检查</h1><p>状态：review_required</p><p>Feather V2 文件可解码性、参考哈希比对、LCL 户号表示、清单单位一致性、Parquet 哈希与实际内容；不认证完整覆盖或适合建模。</p><article><h2>manifest.schema · pass</h2><p>runs/lcl-original-ids-partial</p><p>结构有效不等于字段声明真实。</p><p>修正清单结构错误后再解释数值。</p><details><summary>查看证据</summary><pre>{
+  &quot;errors&quot;: []
+}</pre></details></article><article><h2>units.declaration · pass</h2><p>runs/lcl-original-ids-partial</p><p>单位声明冲突会影响阈值和误差解释；通过只说明已声明元数据一致，不能反推原始测量单位。</p><p>核实来源单位和采样区间，统一元数据；能量需除以区间时长后再与功率阈值比较。</p><details><summary>查看证据</summary><pre>{
+  &quot;channels_checked&quot;: 5229,
+  &quot;failure_count&quot;: 0,
+  &quot;failures&quot;: []
+}</pre></details></article><article><h2>dataset.references · pass</h2><p>/Users/airbate/Documents/Codex/2026-10-16/new-chat-2/outputs/openenergydata/runs/lcl-original-ids-partial</p><p>通道路径必须在数据目录内，且通道身份和物理文件引用不能重复。</p><p>修正重复引用或越界路径；被拒绝的路径不会读取。</p><details><summary>查看证据</summary><pre>{
+  &quot;channels_declared&quot;: 5229,
+  &quot;failure_count&quot;: 0,
+  &quot;examples&quot;: []
+}</pre></details></article><article><h2>dataset.integrity · pass</h2><p>/Users/airbate/Documents/Codex/2026-10-16/new-chat-2/outputs/openenergydata/runs/lcl-original-ids-partial</p><p>哈希匹配证明文件与当前清单一致；清单不是独立发布方签名，不能证明来源真实。</p><p>发现不匹配时保留现场，确认合法修改或损坏原因；不要自动更新哈希以消除告警。</p><details><summary>查看证据</summary><pre>{
+  &quot;matched&quot;: 5229,
+  &quot;failed&quot;: 0,
+  &quot;missing_reference&quot;: 0,
+  &quot;issue_count&quot;: 0,
+  &quot;examples&quot;: []
+}</pre></details></article><article><h2>dataset.contents · pass</h2><p>/Users/airbate/Documents/Codex/2026-10-16/new-chat-2/outputs/openenergydata/runs/lcl-original-ids-partial</p><p>检查 UTC 时间戳严格递增、必要列、空时间戳、NaN/Inf、质量标记类型及非负值。不会把负能耗直接认定为错误。</p><p>按具体通道复核异常；保留原始记录，不自动排序、去重或填补。</p><details><summary>查看证据</summary><pre>{
+  &quot;files_decoded&quot;: 5229,
+  &quot;rows_examined&quot;: 35054028,
+  &quot;failed_channels&quot;: 0,
+  &quot;issue_count&quot;: 0,
+  &quot;examples&quot;: [],
+  &quot;batch_rows&quot;: 65536,
+  &quot;example_limit&quot;: 20,
+  &quot;duplicate_definition&quot;: &quot;strict ascending order; counts are adjacent equal/descending steps, including batch boundaries&quot;
+}</pre></details></article><article><h2>dataset.coverage · unknown</h2><p>/Users/airbate/Documents/Codex/2026-10-16/new-chat-2/outputs/openenergydata/runs/lcl-original-ids-partial</p><p>文件完整可读、内部有序，不意味着时间覆盖或家庭覆盖完整。</p><p>提供预期观测窗口和户号清单后再判断完整覆盖。</p><details><summary>查看证据</summary><pre>{
+  &quot;expected_observation_window_provided&quot;: false,
+  &quot;expected_household_inventory_provided&quot;: false
+}</pre></details></article><article><h2>units.measurement_truth · unknown</h2><p>runs/lcl-original-ids-partial</p><p>本工具未独立验证原始测量单位、时区或采样区间声明。</p><p>用来源说明、标定信息或已知样本交叉验证。</p><details><summary>查看证据</summary><pre>{
+  &quot;verified_against_source_specification&quot;: false
+}</pre></details></article></html>

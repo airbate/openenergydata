@@ -159,6 +159,41 @@ def bench(
     typer.echo(f"✅ 基准完成: {len(rows)} 行结果，排行榜 {path}")
 
 
+@app.command("check")
+def check(
+    sources: list[Path] = typer.Argument(None, help="Feather V2 原始文件，可多个"),
+    dataset: Path | None = typer.Option(None, "--dataset", help="统一格式数据集目录"),
+    output: Path = typer.Option(Path("trust-report"), "--output", "-o"),
+    checksums: Path | None = typer.Option(None, "--checksums", help="JSON 文件名到 SHA-256 的映射（参考来源需自行确认）"),
+):
+    """只读检查结构、身份表示和单位声明；失败退出码 2，其余为 0。"""
+    import json
+    import re
+    from oed.trust import check_inputs, write_check_report
+    hashes = None
+    if checksums:
+        try:
+            hashes = json.loads(checksums.read_text())
+            if not isinstance(hashes, dict) or not all(isinstance(k, str) and isinstance(v, str) and re.fullmatch(r"[0-9a-fA-F]{64}", v) for k, v in hashes.items()):
+                raise ValueError("expected a filename-to-SHA256 object")
+            hashes = {k: v.lower() for k, v in hashes.items()}
+        except (OSError, ValueError) as error:
+            raise typer.BadParameter(str(error), param_hint="--checksums") from error
+    try:
+        report = check_inputs(sources or [], dataset, hashes)
+    except ValueError as error:
+        raise typer.BadParameter(str(error)) from error
+    if checksums and checksums.resolve() in {(output/name).resolve() for name in ('check-report.json', 'check-report.md', 'check-report.html')}:
+        raise typer.BadParameter('Report output would overwrite the checksum reference; choose another output directory')
+    try:
+        path = write_check_report(report, output)
+    except ValueError as error:
+        raise typer.BadParameter(str(error)) from error
+    typer.echo(f"检查完成：{report['status']}，报告 {path}")
+    if report['status'] == 'fail':
+        raise typer.Exit(code=2)
+
+
 def main() -> None:
     app()
 
