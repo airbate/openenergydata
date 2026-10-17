@@ -68,3 +68,32 @@
 - [DataSeer 官网](https://dataseer.ai) / [关于页（Tim Vines 与 Sloan 资助）](https://dataseer.ai/about)
 - [DataSeer × IOP Publishing 合作公告（2024-02）](https://dataseer.ai/2024/02/26/dataseer-ai-and-iop-publishing-collaborate-on-open-science-indicators-and-open-data-pilot)
 - [CASRAI：F-UJI 指南](https://casrai.org/guides/f-uji-automated-fair-assessment-tool)
+
+---
+
+## 六、代码级审计（2026-10-17，克隆实地检查）
+
+### F-UJI 仓库（pangaea-data-publisher/fuji）
+- **许可证 MIT**（PANGAEA 2020）；180 个 Python 文件；最新提交 2026-09-24（活跃）；Docker + CI + simpleclient 齐备。
+- **架构**：`harvester/`（元数据采集）与 `evaluators/`（逐指标评测）分离；`fuji_server/yaml/metrics_v0.5.yaml` 声明式定义全部指标，另有 `metrics_v0.7_software.yaml`（已从数据集扩展到软件对象）。
+
+**指标 YAML 的设计要点（值得 oed 借鉴）**：
+1. 每条指标带 `metric_identifier`（如 FsF-F1-01D）+ 指标规范本身的 DOI 版本引用（`metric_specification: https://doi.org/10.5281/zenodo.6461229`）——**指标目录是可引用、可版本化的规范对象**；
+2. 每指标拆 `metric_tests[]`，**每个测试有独立分数（0/0.5/1）与成熟度等级（1-3）**——不是布尔通过/失败，而是分级打分；
+3. `evaluation_mechanism` 用自然语言写明判定机制——检查项自带可读的"方法学说明书"。
+
+### 开源状态对比（GitHub API 实测）
+
+| 项目 | ⭐ | 许可证 | 活跃度 | 备注 |
+|---|---|---|---|---|
+| fuji (F-UJI) | 中量级 | **MIT** | 2026-09 提交 | 学术托管 |
+| soda-core | 2,436 | NOASSERTION（自定义/变更） | 2026-10 活跃 | **已重新定位为 "Data Contracts engine"**——品类漂移信号 |
+| elementary | 2,422 | Apache-2.0 | 2026-10 活跃 | dbt 原生 |
+| cleanlab | 11,709 | Apache-2.0 | 2026-01（**9 个月未推**，节奏放缓） | 商业重心转 Studio |
+| datahub | 12,857 | Apache-2.0 | 2026-10 活跃 | 元数据平台 |
+| DataSeer | dataseer-ml 29⭐ | 开放 ML 核心 | — | **混合模式：ML 核心开源建信任，产品闭源收费** |
+
+### 对 oed 的三项工程决策建议
+1. **检查项目录 YAML 化 + 规范 DOI 化**：把《标准映射表》做成 F-UJI 式的版本化 YAML（每项检查带国标条款引用、分级分数、成熟度），而非纯文档；
+2. **检查结果分级打分**：借鉴 maturity 1-3 与 0/0.5/1 计分，替代布尔结论——与"不把未验证包装成通过"的定位一致；
+3. **参考 DataSeer 混合模式**：检查核心（规则引擎+标准映射）开源建信任，批量服务/尽调报告收费。
