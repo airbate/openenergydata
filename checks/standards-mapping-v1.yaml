@@ -1,0 +1,117 @@
+# oed 检查项与国家标准映射表 v1
+# ============================================================
+# 规格：oed-standards-mapping/1.0
+# 用途：证明"用 oed 跑一遍 = 覆盖国家标准指标的自动化预检"
+# 结构借鉴 F-UJI metrics YAML（版本化、可引用、分级计分）
+# 维护规则：每条映射必须给出可核查的标准来源；planned 项不得计入覆盖率宣传
+# ============================================================
+spec: oed-standards-mapping
+version: "1.0"
+spec_updated: "2026-10-17"
+
+standards:
+  gbt36344:
+    name: GB/T 36344-2018《信息技术 数据质量评价指标》
+    url: "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=D12140EDFD3967960F51BD1A05645FE7"
+    indicators: [规范性, 完整性, 准确性, 一致性, 时效性]
+  shubiaowei:
+    name: 全国数标委《高质量数据集质量评测》技术文件
+    dimensions: [说明文档, 数据质量, 模型应用]
+  iso5259:
+    name: "ISO/IEC 5259-2:2024 数据质量度量（AI/ML）"
+    url: "https://www.iso.org/standard/81860.html"
+  cqc6d:
+    name: CQC-6D 人工智能高质量数据集评价模型
+    issuer: 中国质量认证中心
+    dimensions: [数据规模, 数据模态, 赋能阶段, 数据指标, 数据服务, 数据管理]
+
+mappings:
+  - check_id: gap
+    name: 时间缺口检测
+    implemented: true
+    gbt36344: [完整性]
+    shubiaowei: [数据质量]
+    iso5259_2: [completeness]
+    cqc6d: [数据指标]
+    evidence: "quality_flags.GAP；LCL 实测 2,042 处缺口（runs/lcl-original-ids-partial）"
+
+  - check_id: impossible_value
+    name: 物理不可能值（如负功率）
+    implemented: true
+    gbt36344: [准确性]
+    shubiaowei: [数据质量]
+    iso5259_2: [plausibility]
+    cqc6d: [数据指标]
+    evidence: "REDD 夹具负功率注入命中；quality_flags.IMPOSSIBLE_VALUE"
+
+  - check_id: outlier
+    name: 越界值检测
+    implemented: true
+    gbt36344: [准确性]
+    shubiaowei: [数据质量]
+    iso5259_2: [accuracy]
+    cqc6d: [数据指标]
+    evidence: "REDD 夹具 45,000W 越界命中"
+
+  - check_id: zero_run
+    name: 持续零功率段
+    implemented: true
+    gbt36344: [准确性, 时效性]
+    shubiaowei: [数据质量]
+    iso5259_2: [accuracy]
+    cqc6d: [数据指标]
+    evidence: "PV-Augmented REDD 发现 105 处白天置零伪影（最长 720 分钟）"
+
+  - check_id: unit_anomaly
+    name: 单位声明一致性
+    implemented: true
+    gbt36344: [一致性, 规范性]
+    shubiaowei: [数据质量]
+    iso5259_2: [consistency]
+    cqc6d: [数据指标]
+    evidence: "LCL 清洗版 kWh 实为归一化值——单位声明与实测统计不符（LCL-SOURCE-RECOVERY.md）"
+
+  - check_id: jitter
+    name: 采样间隔抖动
+    implemented: true
+    gbt36344: [时效性]
+    shubiaowei: [数据质量]
+    iso5259_2: [timeliness]
+    cqc6d: [数据指标]
+
+  - check_id: manifest_schema
+    name: 清单 schema 校验（说明文档与结构规范性）
+    implemented: true
+    gbt36344: [规范性]
+    shubiaowei: [说明文档]
+    iso5259_2: [conformance]
+    cqc6d: [数据管理]
+    evidence: "dataset.oed.json 经 oed-manifest-v1 JSON Schema 校验（7/7 转换器）"
+
+  - check_id: croissant_compat
+    name: Croissant（MLCommons）元数据兼容
+    implemented: true
+    gbt36344: [规范性]
+    shubiaowei: [说明文档]
+    iso5259_2: [interoperability]
+    cqc6d: [数据服务]
+    evidence: "清单顶层结构兼容 cr:Dataset/cr:FileObject/cr:RecordSet"
+
+  - check_id: lineage_hash
+    name: 数据血缘与 SHA-256 哈希回执
+    implemented: true
+    gbt36344: [规范性, 完整性]
+    shubiaowei: [说明文档]
+    iso5259_2: [traceability]
+    cqc6d: [数据服务]
+    evidence: "distribution[].sha256 逐文件血缘（io.sha256_file）"
+
+  - check_id: identity_mapping
+    name: 跨文件户号身份一致性
+    implemented: false
+    status: planned
+    gbt36344: [一致性]
+    shubiaowei: [数据质量]
+    iso5259_2: [consistency]
+    cqc6d: [数据管理]
+    note: "Mac 侧已产出 5,552 户分级证据映射（cases/real-lcl/mapping-2012），待产品化为标准检查项"
